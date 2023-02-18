@@ -10,8 +10,11 @@ import UIKit
 extension UIColor {
 
     struct Main {
-        static var text: UIColor { HEX.hFFFFFF }
-        static var background: UIColor { HEX.h50746C }
+        static var black: UIColor { HEX.hFFFFFF }
+        static var milk: UIColor { HEX.hEDDDC4 }
+        static var green: UIColor { HEX.h50746C }
+        static var yellow: UIColor { HEX.hE7B34D }
+        static var white: UIColor { HEX.hFFFFFF }
     }
 
     struct TabBar {
