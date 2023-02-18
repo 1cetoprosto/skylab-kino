@@ -13,6 +13,7 @@
 		F319B3F5299A399200D5C7EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F3299A399200D5C7EB /* Main.storyboard */; };
 		F319B3F7299A399300D5C7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F6299A399300D5C7EB /* Assets.xcassets */; };
 		F319B3FA299A399300D5C7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F8299A399300D5C7EB /* LaunchScreen.storyboard */; };
+		F3D9FA4D299F441000E904A2 /* CircularCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA4C299F441000E904A2 /* CircularCheckbox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F319B3F6299A399300D5C7EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F319B3F9299A399300D5C7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F319B3FB299A399300D5C7EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D9FA4C299F441000E904A2 /* CircularCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularCheckbox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,12 @@
 		F319B3EC299A399200D5C7EB /* skylab-kino */ = {
 			isa = PBXGroup;
 			children = (
-				F319B3ED299A399200D5C7EB /* AppDelegate.swift */,
-				F319B3EF299A399200D5C7EB /* SceneDelegate.swift */,
+				F3D9FA5129A0968C00E904A2 /* Application */,
+				F3D9FA5429A0975C00E904A2 /* Componets */,
+				F3D9FA4E29A0963A00E904A2 /* Extensions */,
+				F3D9FA5329A096D700E904A2 /* Models */,
+				F3D9FA5229A096CB00E904A2 /* Presentation */,
+				F3D9FA5029A0966600E904A2 /* Services */,
 				F319B3F1299A399200D5C7EB /* ViewController.swift */,
 				F319B3F3299A399200D5C7EB /* Main.storyboard */,
 				F319B3F6299A399300D5C7EB /* Assets.xcassets */,
@@ -65,6 +71,59 @@
 				F319B3FB299A399300D5C7EB /* Info.plist */,
 			);
 			path = "skylab-kino";
+			sourceTree = "<group>";
+		};
+		F3D9FA4E29A0963A00E904A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3D9FA4F29A0964B00E904A2 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3D9FA4F29A0964B00E904A2 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F3D9FA5029A0966600E904A2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F3D9FA5129A0968C00E904A2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F319B3ED299A399200D5C7EB /* AppDelegate.swift */,
+				F319B3EF299A399200D5C7EB /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F3D9FA5229A096CB00E904A2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F3D9FA5329A096D700E904A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3D9FA5429A0975C00E904A2 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				F3D9FA4C299F441000E904A2 /* CircularCheckbox.swift */,
+			);
+			path = Componets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F319B3F2299A399200D5C7EB /* ViewController.swift in Sources */,
+				F3D9FA4D299F441000E904A2 /* CircularCheckbox.swift in Sources */,
 				F319B3EE299A399200D5C7EB /* AppDelegate.swift in Sources */,
 				F319B3F0299A399200D5C7EB /* SceneDelegate.swift in Sources */,
 			);
