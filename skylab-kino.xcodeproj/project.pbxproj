@@ -14,6 +14,8 @@
 		F319B3F7299A399300D5C7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F6299A399300D5C7EB /* Assets.xcassets */; };
 		F319B3FA299A399300D5C7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F8299A399300D5C7EB /* LaunchScreen.storyboard */; };
 		F3D9FA4D299F441000E904A2 /* CircularCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA4C299F441000E904A2 /* CircularCheckbox.swift */; };
+		F3D9FA5629A0986600E904A2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5529A0986600E904A2 /* UIColor+Extension.swift */; };
+		F3D9FA5829A0987100E904A2 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5729A0987100E904A2 /* DefaultButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F319B3F9299A399300D5C7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F319B3FB299A399300D5C7EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3D9FA4C299F441000E904A2 /* CircularCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularCheckbox.swift; sourceTree = "<group>"; };
+		F3D9FA5529A0986600E904A2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F3D9FA5729A0987100E904A2 /* DefaultButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		F3D9FA4F29A0964B00E904A2 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F3D9FA5529A0986600E904A2 /* UIColor+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 		F3D9FA5429A0975C00E904A2 /* Componets */ = {
 			isa = PBXGroup;
 			children = (
+				F3D9FA5729A0987100E904A2 /* DefaultButton.swift */,
 				F3D9FA4C299F441000E904A2 /* CircularCheckbox.swift */,
 			);
 			path = Componets;
@@ -198,9 +204,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F319B3F2299A399200D5C7EB /* ViewController.swift in Sources */,
+				F3D9FA5829A0987100E904A2 /* DefaultButton.swift in Sources */,
 				F3D9FA4D299F441000E904A2 /* CircularCheckbox.swift in Sources */,
 				F319B3EE299A399200D5C7EB /* AppDelegate.swift in Sources */,
 				F319B3F0299A399200D5C7EB /* SceneDelegate.swift in Sources */,
+				F3D9FA5629A0986600E904A2 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
