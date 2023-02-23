@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F30110A429A75970004B22F1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110A329A75970004B22F1 /* MainViewController.swift */; };
+		F30110A729A75A6D004B22F1 /* FilmsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110A629A75A6D004B22F1 /* FilmsTableViewCell.swift */; };
+		F30110A929A75CA2004B22F1 /* FilmsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110A829A75CA2004B22F1 /* FilmsModel.swift */; };
 		F319B3EE299A399200D5C7EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319B3ED299A399200D5C7EB /* AppDelegate.swift */; };
 		F319B3F0299A399200D5C7EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319B3EF299A399200D5C7EB /* SceneDelegate.swift */; };
 		F319B3F2299A399200D5C7EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319B3F1299A399200D5C7EB /* ViewController.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F30110A329A75970004B22F1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F30110A629A75A6D004B22F1 /* FilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsTableViewCell.swift; sourceTree = "<group>"; };
+		F30110A829A75CA2004B22F1 /* FilmsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsModel.swift; sourceTree = "<group>"; };
 		F319B3EA299A399200D5C7EB /* skylab-kino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skylab-kino.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F319B3ED299A399200D5C7EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F319B3EF299A399200D5C7EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F30110A529A75A37004B22F1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F30110A629A75A6D004B22F1 /* FilmsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		F319B3E1299A399200D5C7EB = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +83,8 @@
 				F3D9FA5229A096CB00E904A2 /* Presentation */,
 				F3D9FA5029A0966600E904A2 /* Services */,
 				F319B3F1299A399200D5C7EB /* ViewController.swift */,
+				F30110A529A75A37004B22F1 /* Cells */,
+				F30110A329A75970004B22F1 /* MainViewController.swift */,
 				F319B3F3299A399200D5C7EB /* Main.storyboard */,
 				F319B3F6299A399300D5C7EB /* Assets.xcassets */,
 				F319B3F8299A399300D5C7EB /* LaunchScreen.storyboard */,
@@ -119,6 +135,7 @@
 		F3D9FA5329A096D700E904A2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F30110A829A75CA2004B22F1 /* FilmsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,6 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30110A929A75CA2004B22F1 /* FilmsModel.swift in Sources */,
+				F30110A429A75970004B22F1 /* MainViewController.swift in Sources */,
+				F30110A729A75A6D004B22F1 /* FilmsTableViewCell.swift in Sources */,
 				F319B3F2299A399200D5C7EB /* ViewController.swift in Sources */,
 				F3D9FA5829A0987100E904A2 /* DefaultButton.swift in Sources */,
 				F319B3EE299A399200D5C7EB /* AppDelegate.swift in Sources */,
