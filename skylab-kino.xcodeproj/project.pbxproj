@@ -12,6 +12,15 @@
 		F30110A929A75CA2004B22F1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110A829A75CA2004B22F1 /* Movie.swift */; };
 		F30110AB29A76C71004B22F1 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110AA29A76C71004B22F1 /* Genre.swift */; };
 		F30110AE29A76DFE004B22F1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110AD29A76DFE004B22F1 /* NetworkService.swift */; };
+		F30110B129A77150004B22F1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F30110B029A77150004B22F1 /* Alamofire */; };
+		F30110B329A77365004B22F1 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110B229A77365004B22F1 /* RealmManager.swift */; };
+		F30110B629A773D1004B22F1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F30110B529A773D1004B22F1 /* Realm */; };
+		F30110B829A773D1004B22F1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F30110B729A773D1004B22F1 /* RealmSwift */; };
+		F30110BC29A77456004B22F1 /* MovieRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110BA29A77456004B22F1 /* MovieRealmModel.swift */; };
+		F30110BD29A77456004B22F1 /* GenreRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110BB29A77456004B22F1 /* GenreRealmModel.swift */; };
+		F30110C729A8BCF0004B22F1 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110C629A8BCF0004B22F1 /* MovieDetailsViewController.swift */; };
+		F30110CE29A8BE9E004B22F1 /* GenresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110CD29A8BE9E004B22F1 /* GenresViewModel.swift */; };
+		F30110D029A8BEC9004B22F1 /* GenresViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110CF29A8BEC9004B22F1 /* GenresViewModelType.swift */; };
 		F319B3EE299A399200D5C7EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319B3ED299A399200D5C7EB /* AppDelegate.swift */; };
 		F319B3F0299A399200D5C7EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319B3EF299A399200D5C7EB /* SceneDelegate.swift */; };
 		F319B3F2299A399200D5C7EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319B3F1299A399200D5C7EB /* ViewController.swift */; };
@@ -29,6 +38,12 @@
 		F30110A829A75CA2004B22F1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		F30110AA29A76C71004B22F1 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		F30110AD29A76DFE004B22F1 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F30110B229A77365004B22F1 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		F30110BA29A77456004B22F1 /* MovieRealmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieRealmModel.swift; sourceTree = "<group>"; };
+		F30110BB29A77456004B22F1 /* GenreRealmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreRealmModel.swift; sourceTree = "<group>"; };
+		F30110C629A8BCF0004B22F1 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		F30110CD29A8BE9E004B22F1 /* GenresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewModel.swift; sourceTree = "<group>"; };
+		F30110CF29A8BEC9004B22F1 /* GenresViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewModelType.swift; sourceTree = "<group>"; };
 		F319B3EA299A399200D5C7EB /* skylab-kino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skylab-kino.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F319B3ED299A399200D5C7EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F319B3EF299A399200D5C7EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,20 +62,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30110B829A773D1004B22F1 /* RealmSwift in Frameworks */,
+				F30110B629A773D1004B22F1 /* Realm in Frameworks */,
+				F30110B129A77150004B22F1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F30110A529A75A37004B22F1 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				F30110A629A75A6D004B22F1 /* FilmsTableViewCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		F30110AC29A76CE8004B22F1 /* NetworkModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,80 @@
 				F30110AA29A76C71004B22F1 /* Genre.swift */,
 			);
 			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		F30110B929A77404004B22F1 /* RealmModels */ = {
+			isa = PBXGroup;
+			children = (
+				F30110BB29A77456004B22F1 /* GenreRealmModel.swift */,
+				F30110BA29A77456004B22F1 /* MovieRealmModel.swift */,
+			);
+			path = RealmModels;
+			sourceTree = "<group>";
+		};
+		F30110C329A8BC4E004B22F1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F30110C429A8BC84004B22F1 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		F30110C529A8BC97004B22F1 /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				F30110C929A8BD97004B22F1 /* View */,
+				F30110CA29A8BDAC004B22F1 /* ViewModel */,
+			);
+			path = Genres;
+			sourceTree = "<group>";
+		};
+		F30110C829A8BD39004B22F1 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F30110C629A8BCF0004B22F1 /* MovieDetailsViewController.swift */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		F30110C929A8BD97004B22F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F30110CB29A8BDD5004B22F1 /* Cells */,
+				F30110A329A75970004B22F1 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F30110CA29A8BDAC004B22F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F30110CD29A8BE9E004B22F1 /* GenresViewModel.swift */,
+				F30110CF29A8BEC9004B22F1 /* GenresViewModelType.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F30110CB29A8BDD5004B22F1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F30110A629A75A6D004B22F1 /* FilmsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F30110CC29A8BE2E004B22F1 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				F319B3F1299A399200D5C7EB /* ViewController.swift */,
+			);
+			path = Authorization;
 			sourceTree = "<group>";
 		};
 		F319B3E1299A399200D5C7EB = {
@@ -90,14 +174,11 @@
 			isa = PBXGroup;
 			children = (
 				F3D9FA5129A0968C00E904A2 /* Application */,
+				F3D9FA5229A096CB00E904A2 /* Presentation */,
 				F3D9FA5429A0975C00E904A2 /* Componets */,
 				F3D9FA4E29A0963A00E904A2 /* Extensions */,
 				F3D9FA5329A096D700E904A2 /* Models */,
-				F3D9FA5229A096CB00E904A2 /* Presentation */,
 				F3D9FA5029A0966600E904A2 /* Services */,
-				F319B3F1299A399200D5C7EB /* ViewController.swift */,
-				F30110A529A75A37004B22F1 /* Cells */,
-				F30110A329A75970004B22F1 /* MainViewController.swift */,
 				F319B3F3299A399200D5C7EB /* Main.storyboard */,
 				F319B3F6299A399300D5C7EB /* Assets.xcassets */,
 				F319B3F8299A399300D5C7EB /* LaunchScreen.storyboard */,
@@ -126,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				F30110AD29A76DFE004B22F1 /* NetworkService.swift */,
+				F30110B229A77365004B22F1 /* RealmManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -142,6 +224,11 @@
 		F3D9FA5229A096CB00E904A2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F30110CC29A8BE2E004B22F1 /* Authorization */,
+				F30110C529A8BC97004B22F1 /* Genres */,
+				F30110C329A8BC4E004B22F1 /* Search */,
+				F30110C429A8BC84004B22F1 /* Favorites */,
+				F30110C829A8BD39004B22F1 /* MovieDetails */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -150,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				F30110AC29A76CE8004B22F1 /* NetworkModels */,
+				F30110B929A77404004B22F1 /* RealmModels */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,6 +267,11 @@
 			dependencies = (
 			);
 			name = "skylab-kino";
+			packageProductDependencies = (
+				F30110B029A77150004B22F1 /* Alamofire */,
+				F30110B529A773D1004B22F1 /* Realm */,
+				F30110B729A773D1004B22F1 /* RealmSwift */,
+			);
 			productName = "skylab-kino";
 			productReference = F319B3EA299A399200D5C7EB /* skylab-kino.app */;
 			productType = "com.apple.product-type.application";
@@ -207,6 +300,10 @@
 				Base,
 			);
 			mainGroup = F319B3E1299A399200D5C7EB;
+			packageReferences = (
+				F30110AF29A77150004B22F1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F30110B429A773D1004B22F1 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = F319B3EB299A399200D5C7EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,15 +331,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30110CE29A8BE9E004B22F1 /* GenresViewModel.swift in Sources */,
 				F30110AE29A76DFE004B22F1 /* NetworkService.swift in Sources */,
+				F30110BC29A77456004B22F1 /* MovieRealmModel.swift in Sources */,
 				F30110A929A75CA2004B22F1 /* Movie.swift in Sources */,
 				F30110A429A75970004B22F1 /* MainViewController.swift in Sources */,
 				F30110A729A75A6D004B22F1 /* FilmsTableViewCell.swift in Sources */,
+				F30110C729A8BCF0004B22F1 /* MovieDetailsViewController.swift in Sources */,
 				F319B3F2299A399200D5C7EB /* ViewController.swift in Sources */,
+				F30110D029A8BEC9004B22F1 /* GenresViewModelType.swift in Sources */,
+				F30110B329A77365004B22F1 /* RealmManager.swift in Sources */,
 				F3D9FA5829A0987100E904A2 /* DefaultButton.swift in Sources */,
 				F319B3EE299A399200D5C7EB /* AppDelegate.swift in Sources */,
 				F319B3F0299A399200D5C7EB /* SceneDelegate.swift in Sources */,
 				F3D9FA5A29A0AC6400E904A2 /* CheckBox.swift in Sources */,
+				F30110BD29A77456004B22F1 /* GenreRealmModel.swift in Sources */,
 				F3D9FA5629A0986600E904A2 /* UIColor+Extension.swift in Sources */,
 				F30110AB29A76C71004B22F1 /* Genre.swift in Sources */,
 			);
@@ -462,6 +565,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F30110AF29A77150004B22F1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F30110B429A773D1004B22F1 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F30110B029A77150004B22F1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F30110AF29A77150004B22F1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F30110B529A773D1004B22F1 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F30110B429A773D1004B22F1 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		F30110B729A773D1004B22F1 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F30110B429A773D1004B22F1 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F319B3E2299A399200D5C7EB /* Project object */;
 }
