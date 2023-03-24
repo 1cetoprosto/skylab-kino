@@ -1,5 +1,5 @@
 //
-//  GenresViewModelType.swift
+//  MovieDetailsViewModel.swift
 //  skylab-kino
 //
 //  Created by Леонід Квіт on 24.02.2023.

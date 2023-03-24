@@ -10,29 +10,27 @@ import UIKit
 extension UIColor {
 
     struct Main {
-        static var black: UIColor { HEX.hFFFFFF }
-        static var milk: UIColor { HEX.hEDDDC4 }
-        static var green: UIColor { HEX.h50746C }
-        static var yellow: UIColor { HEX.hE7B34D }
         static var white: UIColor { HEX.hFFFFFF }
+        static var black: UIColor { HEX.h1E1E1E }
+        static var gray: UIColor { HEX.h3A3F47 }
+        static var blue: UIColor { HEX.h0296E5 }
     }
 
-    struct TabBar {
-        static var tint: UIColor { HEX.h50746C }
-    }
-
-    struct TableView {
-        static var cellBackground: UIColor { HEX.hFFFFFF }
-        static var cellLabel: UIColor { HEX.h000000 }
-    }
+//    struct TabBar {
+//        static var tint: UIColor { HEX.h50746C }
+//    }
+//
+//    struct TableView {
+//        static var cellBackground: UIColor { HEX.h1E1E1E }
+//        static var cellLabel: UIColor { HEX.h000000 }
+//    }
 
     fileprivate struct HEX {
         // main colors
-        static let h000000 = UIColor(hex: 0x000000)
-        static let hEDDDC4 = UIColor(hex: 0xEDDDC4)
-        static let h50746C = UIColor(hex: 0x50746C)
-        static let hE7B34D = UIColor(hex: 0xE7B34D)
         static let hFFFFFF = UIColor(hex: 0xFFFFFF)
+        static let h1E1E1E = UIColor(hex: 0x1E1E1E)
+        static let h3A3F47 = UIColor(hex: 0x3A3F47)
+        static let h0296E5 = UIColor(hex: 0x0296E5)
     }
 
 }
