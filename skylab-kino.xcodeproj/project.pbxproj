@@ -43,6 +43,8 @@
 		F3C7937729C6D182006EA8EE /* Top5CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7937629C6D182006EA8EE /* Top5CollectionView.swift */; };
 		F3C7937B29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7937A29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift */; };
 		F3C7937D29C6E7B8006EA8EE /* Top5MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7937C29C6E7B8006EA8EE /* Top5MoviesViewModel.swift */; };
+		F3D0A97529CD5AA4000C6F7F /* MoviesViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A97429CD5AA4000C6F7F /* MoviesViewModelType.swift */; };
+		F3D0A97729CD5B1A000C6F7F /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A97629CD5B1A000C6F7F /* MoviesViewModel.swift */; };
 		F3D9FA5629A0986600E904A2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5529A0986600E904A2 /* UIColor+Extension.swift */; };
 		F3D9FA5829A0987100E904A2 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5729A0987100E904A2 /* DefaultButton.swift */; };
 		F3D9FA5A29A0AC6400E904A2 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5929A0AC6400E904A2 /* CheckBox.swift */; };
@@ -84,6 +86,8 @@
 		F3C7937629C6D182006EA8EE /* Top5CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top5CollectionView.swift; sourceTree = "<group>"; };
 		F3C7937A29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top5MoviesViewModelType.swift; sourceTree = "<group>"; };
 		F3C7937C29C6E7B8006EA8EE /* Top5MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top5MoviesViewModel.swift; sourceTree = "<group>"; };
+		F3D0A97429CD5AA4000C6F7F /* MoviesViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModelType.swift; sourceTree = "<group>"; };
+		F3D0A97629CD5B1A000C6F7F /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
 		F3D9FA5529A0986600E904A2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		F3D9FA5729A0987100E904A2 /* DefaultButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		F3D9FA5929A0AC6400E904A2 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 				F30110CF29A8BEC9004B22F1 /* GenresViewModelType.swift */,
 				F3C7937A29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift */,
 				F3C7937C29C6E7B8006EA8EE /* Top5MoviesViewModel.swift */,
+				F3D0A97429CD5AA4000C6F7F /* MoviesViewModelType.swift */,
+				F3D0A97629CD5B1A000C6F7F /* MoviesViewModel.swift */,
 				F30110D329A8C09C004B22F1 /* GenresItemViewModel.swift */,
 				F30110D129A8C089004B22F1 /* GenresItemViewModelType.swift */,
 				F30110DC29A9CA50004B22F1 /* MovieItemViewModel.swift */,
@@ -407,9 +413,11 @@
 				F30110CE29A8BE9E004B22F1 /* GenresViewModel.swift in Sources */,
 				F30110AE29A76DFE004B22F1 /* NetworkService.swift in Sources */,
 				F30110BC29A77456004B22F1 /* MovieRealmModel.swift in Sources */,
+				F3D0A97729CD5B1A000C6F7F /* MoviesViewModel.swift in Sources */,
 				F30110A929A75CA2004B22F1 /* TMDBMoviesModel.swift in Sources */,
 				F30110A429A75970004B22F1 /* HomeViewController.swift in Sources */,
 				F30110D229A8C089004B22F1 /* GenresItemViewModelType.swift in Sources */,
+				F3D0A97529CD5AA4000C6F7F /* MoviesViewModelType.swift in Sources */,
 				F30110C729A8BCF0004B22F1 /* MovieDetailsViewController.swift in Sources */,
 				F30110DD29A9CA50004B22F1 /* MovieItemViewModel.swift in Sources */,
 				F30110D429A8C09C004B22F1 /* GenresItemViewModel.swift in Sources */,
