@@ -48,6 +48,12 @@
 		F3D9FA5629A0986600E904A2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5529A0986600E904A2 /* UIColor+Extension.swift */; };
 		F3D9FA5829A0987100E904A2 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5729A0987100E904A2 /* DefaultButton.swift */; };
 		F3D9FA5A29A0AC6400E904A2 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5929A0AC6400E904A2 /* CheckBox.swift */; };
+		F3E8D23529E144840012BEC4 /* SearchHistoryViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23429E144840012BEC4 /* SearchHistoryViewModelType.swift */; };
+		F3E8D23729E149DA0012BEC4 /* SearchHistoryItemViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23629E149DA0012BEC4 /* SearchHistoryItemViewModelType.swift */; };
+		F3E8D23929E14BA00012BEC4 /* SearchHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23829E14BA00012BEC4 /* SearchHistoryViewModel.swift */; };
+		F3E8D23B29E14E250012BEC4 /* SearchHistoryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23A29E14E250012BEC4 /* SearchHistoryItemViewModel.swift */; };
+		F3E8D23E29E158910012BEC4 /* SearchHistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23D29E158910012BEC4 /* SearchHistoryViewCell.swift */; };
+		F3E8D24029E162B80012BEC4 /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23F29E162B80012BEC4 /* WatchListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +97,12 @@
 		F3D9FA5529A0986600E904A2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		F3D9FA5729A0987100E904A2 /* DefaultButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		F3D9FA5929A0AC6400E904A2 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		F3E8D23429E144840012BEC4 /* SearchHistoryViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryViewModelType.swift; sourceTree = "<group>"; };
+		F3E8D23629E149DA0012BEC4 /* SearchHistoryItemViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryItemViewModelType.swift; sourceTree = "<group>"; };
+		F3E8D23829E14BA00012BEC4 /* SearchHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryViewModel.swift; sourceTree = "<group>"; };
+		F3E8D23A29E14E250012BEC4 /* SearchHistoryItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryItemViewModel.swift; sourceTree = "<group>"; };
+		F3E8D23D29E158910012BEC4 /* SearchHistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryViewCell.swift; sourceTree = "<group>"; };
+		F3E8D23F29E162B80012BEC4 /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,11 +146,12 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		F30110C429A8BC84004B22F1 /* Favorites */ = {
+		F30110C429A8BC84004B22F1 /* WatchList */ = {
 			isa = PBXGroup;
 			children = (
+				F3E8D23F29E162B80012BEC4 /* WatchListViewController.swift */,
 			);
-			path = Favorites;
+			path = WatchList;
 			sourceTree = "<group>";
 		};
 		F30110C529A8BC97004B22F1 /* Home */ = {
@@ -267,6 +280,7 @@
 		F3D0A97C29CDA12E000C6F7F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F3E8D23C29E1585E0012BEC4 /* Cells */,
 				F3D0A97E29CDA181000C6F7F /* SearchViewController.swift */,
 			);
 			path = View;
@@ -275,6 +289,10 @@
 		F3D0A97D29CDA13B000C6F7F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F3E8D23429E144840012BEC4 /* SearchHistoryViewModelType.swift */,
+				F3E8D23829E14BA00012BEC4 /* SearchHistoryViewModel.swift */,
+				F3E8D23629E149DA0012BEC4 /* SearchHistoryItemViewModelType.swift */,
+				F3E8D23A29E14E250012BEC4 /* SearchHistoryItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -318,7 +336,7 @@
 				F30110CC29A8BE2E004B22F1 /* Authorization */,
 				F30110C529A8BC97004B22F1 /* Home */,
 				F30110C329A8BC4E004B22F1 /* Search */,
-				F30110C429A8BC84004B22F1 /* Favorites */,
+				F30110C429A8BC84004B22F1 /* WatchList */,
 				F30110C829A8BD39004B22F1 /* MovieDetails */,
 			);
 			path = Presentation;
@@ -343,6 +361,14 @@
 				F30AF06729CABFA7000F65EE /* CustomSegmentedControl.swift */,
 			);
 			path = Componets;
+			sourceTree = "<group>";
+		};
+		F3E8D23C29E1585E0012BEC4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F3E8D23D29E158910012BEC4 /* SearchHistoryViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,14 +454,18 @@
 				F3C7937B29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift in Sources */,
 				F30110CE29A8BE9E004B22F1 /* GenresViewModel.swift in Sources */,
 				F30110AE29A76DFE004B22F1 /* NetworkService.swift in Sources */,
+				F3E8D23B29E14E250012BEC4 /* SearchHistoryItemViewModel.swift in Sources */,
 				F30110BC29A77456004B22F1 /* MovieRealmModel.swift in Sources */,
 				F3D0A97729CD5B1A000C6F7F /* MoviesViewModel.swift in Sources */,
 				F30110A929A75CA2004B22F1 /* TMDBMoviesModel.swift in Sources */,
+				F3E8D23529E144840012BEC4 /* SearchHistoryViewModelType.swift in Sources */,
 				F30110A429A75970004B22F1 /* HomeViewController.swift in Sources */,
+				F3E8D23729E149DA0012BEC4 /* SearchHistoryItemViewModelType.swift in Sources */,
 				F30110D229A8C089004B22F1 /* GenresItemViewModelType.swift in Sources */,
 				F3D0A97529CD5AA4000C6F7F /* MoviesViewModelType.swift in Sources */,
 				F30110C729A8BCF0004B22F1 /* MovieDetailsViewController.swift in Sources */,
 				F30110DD29A9CA50004B22F1 /* MovieItemViewModel.swift in Sources */,
+				F3E8D24029E162B80012BEC4 /* WatchListViewController.swift in Sources */,
 				F30110D429A8C09C004B22F1 /* GenresItemViewModel.swift in Sources */,
 				F319B3F2299A399200D5C7EB /* ViewController.swift in Sources */,
 				F30110DB29A9C9F8004B22F1 /* MovieItemViewModelType.swift in Sources */,
@@ -446,6 +476,8 @@
 				F30762C229B3122B00C10D2F /* Endpoint.swift in Sources */,
 				F30AF06A29CD541D000F65EE /* MovieCollectionViewCell.swift in Sources */,
 				F30110B329A77365004B22F1 /* RealmManager.swift in Sources */,
+				F3E8D23929E14BA00012BEC4 /* SearchHistoryViewModel.swift in Sources */,
+				F3E8D23E29E158910012BEC4 /* SearchHistoryViewCell.swift in Sources */,
 				F30762B929AA4D6500C10D2F /* Top5MovieCollectionViewCell.swift in Sources */,
 				F3D9FA5829A0987100E904A2 /* DefaultButton.swift in Sources */,
 				F30110D929A8C15A004B22F1 /* MovieDetailsViewModel.swift in Sources */,

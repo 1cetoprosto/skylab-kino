@@ -8,22 +8,66 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet weak var suggestionsTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    private var searchHistoryViewModel: SearchHistoryViewModelType?
+    //private var searchResaultViewModel: SearchHistoryViewModelType?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        searchHistoryViewModel = SearchHistoryViewModel()
+        searchHistoryViewModel?.getSearchHistory { [weak self] in
+            self?.suggestionsTableView.reloadData()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        suggestionsTableView.delegate = self
+        suggestionsTableView.dataSource = self
+        
     }
-    */
+    
+//    func showSuggestionsTableView() {
+//        if suggestionsTableView == nil {
+//            // Get keyboard height dynamically and 60 is my navigationBar height.
+//            let y = searchBar.frame.origin.y + searchBar.frame.size.height + 60
+//            let height = view.frame.size.height - y - keyboardHeight
+//            suggestionsTableView = UITableView(frame: CGRect(x: 0, y: y, width: view.frame.size.width, height: height))
+//            suggestionsTableView?.delegate = self
+//            suggestionsTableView?.dataSource = self
+//            suggestionsTableView?.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+//            view.addSubview(suggestionsTableView!)
+//        }
+//    }
+    
+    
+}
+
+extension SearchViewController: UITableViewDelegate {
+
+}
+
+extension SearchViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        searchHistoryViewModel?.numberOfRowInSection(for: section) ?? 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchHistoryViewCell", for: indexPath) as? SearchHistoryViewCell
+        
+        guard let cell, let searchHistoryViewModel else { return UITableViewCell() }
+        
+        let cellViewModel = searchHistoryViewModel.cellViewModel(for: indexPath)
+
+        cell.viewModel = cellViewModel
+        
+        return cell
+    }
+
 
 }

@@ -103,20 +103,93 @@
         <!--Search-->
         <scene sceneID="FIH-eb-SaI">
             <objects>
-                <viewController id="9In-Lm-5qd" sceneMemberID="viewController">
+                <viewController id="9In-Lm-5qd" customClass="SearchViewController" customModule="skylab_kino" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mqK-S1-gg1">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ay6-Qj-nm8">
+                                <rect key="frame" x="194" y="59" width="53" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar alpha="0.55000001192092896" contentMode="redraw" barStyle="black" placeholder="Search" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsj-0i-1It">
+                                <rect key="frame" x="20" y="103" width="390" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Hwj-aq-lHv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="VdQ-2y-Ff3"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.14117647059999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <offsetWrapper key="searchTextPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="KGt-az-FNP" id="gsE-BM-OCK"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5T9-sQ-D2G">
+                                <rect key="frame" x="0.0" y="155" width="430" height="694"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchHistoryViewCell" id="KFv-6X-qDh" customClass="SearchHistoryViewCell" customModule="skylab_kino" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="430" height="43.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KFv-6X-qDh" id="hyJ-SP-dMf">
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="43.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="searchHistoryItem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euF-zc-mFl">
+                                                    <rect key="frame" x="40" y="10.999999999999998" width="350" height="21.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="euF-zc-mFl" firstAttribute="top" secondItem="hyJ-SP-dMf" secondAttribute="topMargin" id="Del-zS-NdK"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="euF-zc-mFl" secondAttribute="bottom" id="hD8-GE-YVr"/>
+                                                <constraint firstItem="euF-zc-mFl" firstAttribute="leading" secondItem="hyJ-SP-dMf" secondAttribute="leadingMargin" constant="20" id="mC8-YP-kRm"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="euF-zc-mFl" secondAttribute="trailing" constant="20" id="tIn-Ff-wYj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.4039215686" green="0.40784313729999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="title" destination="euF-zc-mFl" id="9BS-i4-5jX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="eBE-xD-4tc"/>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eBE-xD-4tc" firstAttribute="trailing" secondItem="5T9-sQ-D2G" secondAttribute="trailing" id="ENP-bK-iap"/>
+                            <constraint firstItem="Ay6-Qj-nm8" firstAttribute="top" secondItem="eBE-xD-4tc" secondAttribute="top" id="KWJ-No-FDY"/>
+                            <constraint firstItem="5T9-sQ-D2G" firstAttribute="bottom" secondItem="eBE-xD-4tc" secondAttribute="bottom" id="LKc-Ho-dDH"/>
+                            <constraint firstItem="eBE-xD-4tc" firstAttribute="trailing" secondItem="Lsj-0i-1It" secondAttribute="trailing" constant="20" id="VKo-bU-mwQ"/>
+                            <constraint firstItem="Ay6-Qj-nm8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eBE-xD-4tc" secondAttribute="leading" id="bWP-FV-Awn"/>
+                            <constraint firstItem="5T9-sQ-D2G" firstAttribute="top" secondItem="Lsj-0i-1It" secondAttribute="bottom" constant="10" id="iZH-26-fc1"/>
+                            <constraint firstItem="5T9-sQ-D2G" firstAttribute="leading" secondItem="eBE-xD-4tc" secondAttribute="leading" id="n7K-pE-npt"/>
+                            <constraint firstItem="eBE-xD-4tc" firstAttribute="trailing" secondItem="Ay6-Qj-nm8" secondAttribute="trailing" constant="183" id="nAl-mf-fnf"/>
+                            <constraint firstItem="Lsj-0i-1It" firstAttribute="top" secondItem="Ay6-Qj-nm8" secondAttribute="bottom" constant="24" id="s2w-QU-g0S"/>
+                            <constraint firstItem="Lsj-0i-1It" firstAttribute="leading" secondItem="eBE-xD-4tc" secondAttribute="leading" constant="20" id="zud-TN-T5u"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="Search" id="8mm-5I-Txa">
                         <color key="badgeColor" red="0.4039215686" green="0.40784313729999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="searchBar" destination="Lsj-0i-1It" id="FAk-2B-mWm"/>
+                        <outlet property="suggestionsTableView" destination="5T9-sQ-D2G" id="a0N-Xg-jnu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZt-x3-H0D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1144" y="730"/>
+            <point key="canvasLocation" x="1142.7906976744187" y="729.39914163090134"/>
         </scene>
         <!--Watch list-->
         <scene sceneID="2NO-tt-8rH">
@@ -125,8 +198,31 @@
                     <view key="view" contentMode="scaleToFill" id="pdZ-4x-9G3">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMZ-9H-qCT">
+                                <rect key="frame" x="177.66666666666666" y="59" width="74.666666666666657" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="O2x-pf-b8a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wWJ-v5-a0L">
+                                <rect key="frame" x="20" y="99" width="390" height="750"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bNY-bm-qam"/>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MMZ-9H-qCT" firstAttribute="top" secondItem="bNY-bm-qam" secondAttribute="top" id="3tl-mB-Ojg"/>
+                            <constraint firstItem="MMZ-9H-qCT" firstAttribute="centerX" secondItem="pdZ-4x-9G3" secondAttribute="centerX" id="EHY-Cb-0bj"/>
+                            <constraint firstItem="wWJ-v5-a0L" firstAttribute="top" secondItem="MMZ-9H-qCT" secondAttribute="bottom" constant="20" id="JwK-Lz-xRi"/>
+                            <constraint firstItem="wWJ-v5-a0L" firstAttribute="trailing" secondItem="bNY-bm-qam" secondAttribute="trailing" constant="-20" id="MHJ-91-8LR"/>
+                            <constraint firstItem="wWJ-v5-a0L" firstAttribute="leading" secondItem="bNY-bm-qam" secondAttribute="leading" constant="20" id="nwV-fO-LF3"/>
+                            <constraint firstItem="wWJ-v5-a0L" firstAttribute="bottom" secondItem="bNY-bm-qam" secondAttribute="bottom" id="sVc-9i-wWU"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Watch list" image="Favorites" id="sEN-7d-E8d">
                         <color key="badgeColor" red="0.4039215686" green="0.40784313729999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -134,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQM-7H-AhG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960" y="729"/>
+            <point key="canvasLocation" x="1959.0697674418604" y="728.75536480686696"/>
         </scene>
         <!--Home-->
         <scene sceneID="mK2-QZ-w9H">
