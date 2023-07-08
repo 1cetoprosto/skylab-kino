@@ -60,6 +60,8 @@
 		F3E8D23B29E14E250012BEC4 /* SearchHistoryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23A29E14E250012BEC4 /* SearchHistoryItemViewModel.swift */; };
 		F3E8D23E29E158910012BEC4 /* SearchHistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23D29E158910012BEC4 /* SearchHistoryViewCell.swift */; };
 		F3E8D24029E162B80012BEC4 /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23F29E162B80012BEC4 /* WatchListViewController.swift */; };
+		F3E9E2EA2A59784D00E23450 /* Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = F3CE6BD72A595A0B00FA34F7 /* Movies.json */; };
+		F3E9E2EC2A5978D100E23450 /* Top5Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = F3E9E2EB2A5978D100E23450 /* Top5Movies.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +120,7 @@
 		F3E8D23A29E14E250012BEC4 /* SearchHistoryItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryItemViewModel.swift; sourceTree = "<group>"; };
 		F3E8D23D29E158910012BEC4 /* SearchHistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryViewCell.swift; sourceTree = "<group>"; };
 		F3E8D23F29E162B80012BEC4 /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
+		F3E9E2EB2A5978D100E23450 /* Top5Movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Top5Movies.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +228,7 @@
 				F3D0A97429CD5AA4000C6F7F /* MoviesViewModelType.swift */,
 				F3D0A97629CD5B1A000C6F7F /* MoviesViewModel.swift */,
 				F3CE6BD72A595A0B00FA34F7 /* Movies.json */,
+				F3E9E2EB2A5978D100E23450 /* Top5Movies.json */,
 				F30110D329A8C09C004B22F1 /* GenresItemViewModel.swift */,
 				F30110D129A8C089004B22F1 /* GenresItemViewModelType.swift */,
 				F30110DC29A9CA50004B22F1 /* MovieItemViewModel.swift */,
@@ -507,6 +511,8 @@
 			files = (
 				F319B3FA299A399300D5C7EB /* LaunchScreen.storyboard in Resources */,
 				F319B3F7299A399300D5C7EB /* Assets.xcassets in Resources */,
+				F3E9E2EC2A5978D100E23450 /* Top5Movies.json in Resources */,
+				F3E9E2EA2A59784D00E23450 /* Movies.json in Resources */,
 				F319B3F5299A399200D5C7EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

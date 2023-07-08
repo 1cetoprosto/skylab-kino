@@ -23,7 +23,7 @@ class Top5MoviesViewModel: Top5MoviesViewModelType {
     }
     
     func loadMoviesFromJSON(completion: @escaping ([DomainMovie]?) -> Void) {
-        guard let fileURL = Bundle.main.url(forResource: "movies", withExtension: "json") else {
+        guard let fileURL = Bundle.main.url(forResource: "Top5Movies", withExtension: "json") else {
             print("JSON file not found.")
             completion(nil)
             return
