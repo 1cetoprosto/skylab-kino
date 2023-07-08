@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol WatchListItemViewModelType {
+    var title: String { get }
+}

@@ -8,16 +8,16 @@
 import Foundation
 
 protocol Repository {
-    associatedtype T
+    associatedtype Item
     
-    func get(id: Int, completionHandler: (T?, Error?) -> Void)
-    func list(completionHandler: ([T]?, Error?) -> Void)
-    func add(_ item: T, completionHandler: (Error?) -> Void)
-    func delete(_ item: T, completionHandler: (Error?) -> Void)
-    func edit(_ item: T, completionHandler: (Error?) -> Void)
+    func get(id: Int, completionHandler: (Item?, Error?) -> Void)
+    func list(completionHandler: ([Item]?, Error?) -> Void)
+    func add(_ item: Item, completionHandler: (Error?) -> Void)
+    func delete(_ item: Item, completionHandler: (Error?) -> Void)
+    func edit(_ item: Item, completionHandler: (Error?) -> Void)
 }
 
-//protocol CombineRepository {
+// protocol CombineRepository {
 //    associatedtype T
 //
 //    func get(id: Int) -> AnyPublisher<T, Error>
@@ -25,4 +25,4 @@ protocol Repository {
 //    func add(_ item: T) -> AnyPublisher<Void, Error>
 //    func delete(_ item: T) -> AnyPublisher<Void, Error>
 //    func edit(_ item: T) -> AnyPublisher<Void, Error>
-//}
+// }

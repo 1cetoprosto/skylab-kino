@@ -6,15 +6,28 @@
 //
 
 import RealmSwift
+import Foundation
 
 class RealmManager {
-    static let shared = RealmManager()
+    static let shared: RealmManager = {
+            do {
+                return try RealmManager()
+            } catch {
+                fatalError("Error creating RealmManager: \(error)")
+            }
+        }()
+    
+    private let localRealm: Realm
     
     // MARK: - Lifecycle
-    private init() {}
-    
-    let localRealm = try! Realm()
-    
+    private init() throws {
+        do {
+            self.localRealm = try Realm()
+        } catch {
+            throw error
+        }
+    }
+
     func save<T: Object>(model object: T) {
         print("Realm is located at:", localRealm.configuration.fileURL!)
         do {
@@ -51,7 +64,9 @@ class RealmManager {
     }
 
     func fetchMovies(genreIDS: Int) -> [MovieRealmModel] {
-        return Array(localRealm.objects(MovieRealmModel.self).filter {$0.genreIDS.contains(where: {$0 == genreIDS})})//("genreIDS CONTAINS %@", genreIDS))
+        let predicate = NSPredicate(format: "genreIDS CONTAINS %@", NSNumber(value: genreIDS))
+        
+        return Array(localRealm.objects(MovieRealmModel.self).filter(predicate))
     }
     
     func fetchGenres() -> [GenreRealmModel] {

@@ -31,4 +31,3 @@ class Top5MovieCollectionViewCell: UICollectionViewCell {
     }
     
 }
-

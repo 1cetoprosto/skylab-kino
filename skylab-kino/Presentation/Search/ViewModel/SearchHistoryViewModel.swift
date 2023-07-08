@@ -13,7 +13,7 @@ class SearchHistoryViewModel: SearchHistoryViewModelType {
     
     private var movies: [String]?
     
-    func getSearchHistory(completion: @escaping () -> ()) {
+    func getSearchHistory(completion: @escaping () -> Void) {
         movies = []
         movies?.append("Avatar")
         movies?.append("Avatar 2")

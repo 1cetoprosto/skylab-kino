@@ -5,11 +5,13 @@
 //  Created by Леонід Квіт on 07.01.2023.
 //
 
-//import Foundation
+// import Foundation
+
 import Alamofire
 
 class NetworkService {
-    //static let shared = NetworkService()
+    
+    // static let shared = NetworkService()
     
     // MARK: - Lifecycle
     private init() {}
@@ -55,8 +57,8 @@ class NetworkService {
         }
     }
     
-    func fetchPopularMoviesWithGenres(genreId: Int,page: Int, completion: @escaping (TMDBMoviesModel) -> Void) {
-        //let endpoint = Endpoint.popularMovies(page: page)
+    func fetchPopularMoviesWithGenres(genreId: Int, page: Int, completion: @escaping (TMDBMoviesModel) -> Void) {
+        // let endpoint = Endpoint.popularMovies(page: page)
         let request = AF.request("https://api.themoviedb.org/3/discover/movie?api_key=f6454f589d9354f69c4998388e8a31fd&with_genres=878&sort_by=popularity.desc&language=uk&page=\(page)")
         
         request.responseDecodable(of: TMDBMoviesModel.self) { (response) in

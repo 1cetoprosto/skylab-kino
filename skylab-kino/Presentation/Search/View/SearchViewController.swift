@@ -13,7 +13,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     private var searchHistoryViewModel: SearchHistoryViewModelType?
-    //private var searchResaultViewModel: SearchHistoryViewModelType?
+    // private var searchResaultViewModel: SearchHistoryViewModelType?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -45,7 +45,6 @@ class SearchViewController: UIViewController {
 //        }
 //    }
     
-    
 }
 
 extension SearchViewController: UITableViewDelegate {
@@ -68,6 +67,5 @@ extension SearchViewController: UITableViewDataSource {
         
         return cell
     }
-
 
 }

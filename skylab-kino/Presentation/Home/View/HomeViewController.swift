@@ -11,9 +11,9 @@ class HomeViewController: UIViewController, UICollectionViewDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var top5CollectionView: UICollectionView!
-    @IBOutlet weak var requestSegmented: CustomSegmentedControl!{
-        didSet{
-            requestSegmented.setButtonTitles(buttonTitles: ["Now playing","Upcoming","Top rated","Popular"])
+    @IBOutlet weak var requestSegmented: CustomSegmentedControl! {
+        didSet {
+            requestSegmented.setButtonTitles(buttonTitles: ["Now playing", "Upcoming", "Top rated", "Popular"])
             requestSegmented.selectorViewColor = UIColor.Main.gray
             requestSegmented.selectorTextColor = UIColor.Main.white
         }
@@ -46,8 +46,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate {
         
         movieCollectionView.dataSource = self
         movieCollectionView.delegate = self
-        
-        //collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         
     }
 }
@@ -87,7 +85,7 @@ extension HomeViewController: UICollectionViewDataSource {
     
 }
 
-//extension HomeViewController: UICollectionViewDelegate {
+// extension HomeViewController: UICollectionViewDelegate {
 //
 //    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        if collectionView == top5CollectionView {
@@ -97,10 +95,10 @@ extension HomeViewController: UICollectionViewDataSource {
 //        }
 //    }
 //
-//}
+// }
 
-//extension HomeViewController: UICollectionViewDelegateFlowLayout {
+// extension HomeViewController: UICollectionViewDelegateFlowLayout {
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //        CGSize(width: 144, height: 250)
 //    }
-//}
+// }

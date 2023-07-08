@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+class WatchListItemViewModel: WatchListItemViewModelType {
+    
+    private let item: DomainMovie
+    
+    init(item: DomainMovie) {
+        self.item = item
+    }
+    
+    var title: String {
+        return item.title
+    }
+    
+}

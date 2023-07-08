@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A26F224F921DEB7C2A5A9CED /* Pods_skylab_kino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B905B3E4E3F82BEB34ED6D0 /* Pods_skylab_kino.framework */; };
 		F30110A429A75970004B22F1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110A329A75970004B22F1 /* HomeViewController.swift */; };
 		F30110A929A75CA2004B22F1 /* TMDBMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110A829A75CA2004B22F1 /* TMDBMoviesModel.swift */; };
 		F30110AB29A76C71004B22F1 /* TMDBGenresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110AA29A76C71004B22F1 /* TMDBGenresModel.swift */; };
 		F30110AE29A76DFE004B22F1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110AD29A76DFE004B22F1 /* NetworkService.swift */; };
-		F30110B129A77150004B22F1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F30110B029A77150004B22F1 /* Alamofire */; };
 		F30110B329A77365004B22F1 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110B229A77365004B22F1 /* RealmManager.swift */; };
-		F30110B629A773D1004B22F1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F30110B529A773D1004B22F1 /* Realm */; };
-		F30110B829A773D1004B22F1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F30110B729A773D1004B22F1 /* RealmSwift */; };
 		F30110BC29A77456004B22F1 /* MovieRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110BA29A77456004B22F1 /* MovieRealmModel.swift */; };
 		F30110BD29A77456004B22F1 /* GenreRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110BB29A77456004B22F1 /* GenreRealmModel.swift */; };
 		F30110C729A8BCF0004B22F1 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30110C629A8BCF0004B22F1 /* MovieDetailsViewController.swift */; };
@@ -40,8 +38,16 @@
 		F319B3F5299A399200D5C7EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F3299A399200D5C7EB /* Main.storyboard */; };
 		F319B3F7299A399300D5C7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F6299A399300D5C7EB /* Assets.xcassets */; };
 		F319B3FA299A399300D5C7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F8299A399300D5C7EB /* LaunchScreen.storyboard */; };
+		F357660E29F69D1E00492119 /* WatchListViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357660D29F69D1E00492119 /* WatchListViewModelType.swift */; };
+		F357661029F69DC300492119 /* WatchListItemViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357660F29F69DC300492119 /* WatchListItemViewModelType.swift */; };
+		F357661229F69F9300492119 /* WatchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357661129F69F9300492119 /* WatchListViewModel.swift */; };
+		F3697E6D2A1CBA2000398ABB /* WatchListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3697E6C2A1CBA2000398ABB /* WatchListViewCell.swift */; };
+		F3697E6F2A1CCA4F00398ABB /* WatchListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3697E6E2A1CCA4F00398ABB /* WatchListItemViewModel.swift */; };
 		F3C7937B29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7937A29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift */; };
 		F3C7937D29C6E7B8006EA8EE /* Top5MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7937C29C6E7B8006EA8EE /* Top5MoviesViewModel.swift */; };
+		F3CE6BD12A59548100FA34F7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F3CE6BD02A59548100FA34F7 /* Alamofire */; };
+		F3CE6BD42A5954B300FA34F7 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F3CE6BD32A5954B300FA34F7 /* Realm */; };
+		F3CE6BD62A5954B300FA34F7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F3CE6BD52A5954B300FA34F7 /* RealmSwift */; };
 		F3D0A97529CD5AA4000C6F7F /* MoviesViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A97429CD5AA4000C6F7F /* MoviesViewModelType.swift */; };
 		F3D0A97729CD5B1A000C6F7F /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A97629CD5B1A000C6F7F /* MoviesViewModel.swift */; };
 		F3D0A97F29CDA181000C6F7F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A97E29CDA181000C6F7F /* SearchViewController.swift */; };
@@ -57,6 +63,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B905B3E4E3F82BEB34ED6D0 /* Pods_skylab_kino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skylab_kino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31C810EB1B4E1293F178E497 /* Pods-skylab-kino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skylab-kino.debug.xcconfig"; path = "Target Support Files/Pods-skylab-kino/Pods-skylab-kino.debug.xcconfig"; sourceTree = "<group>"; };
+		A597D4B203F9A775EEE2BE38 /* Pods-skylab-kino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skylab-kino.release.xcconfig"; path = "Target Support Files/Pods-skylab-kino/Pods-skylab-kino.release.xcconfig"; sourceTree = "<group>"; };
 		F30110A329A75970004B22F1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F30110A829A75CA2004B22F1 /* TMDBMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBMoviesModel.swift; sourceTree = "<group>"; };
 		F30110AA29A76C71004B22F1 /* TMDBGenresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBGenresModel.swift; sourceTree = "<group>"; };
@@ -89,8 +98,14 @@
 		F319B3F6299A399300D5C7EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F319B3F9299A399300D5C7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F319B3FB299A399300D5C7EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F357660D29F69D1E00492119 /* WatchListViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewModelType.swift; sourceTree = "<group>"; };
+		F357660F29F69DC300492119 /* WatchListItemViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListItemViewModelType.swift; sourceTree = "<group>"; };
+		F357661129F69F9300492119 /* WatchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewModel.swift; sourceTree = "<group>"; };
+		F3697E6C2A1CBA2000398ABB /* WatchListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewCell.swift; sourceTree = "<group>"; };
+		F3697E6E2A1CCA4F00398ABB /* WatchListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListItemViewModel.swift; sourceTree = "<group>"; };
 		F3C7937A29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top5MoviesViewModelType.swift; sourceTree = "<group>"; };
 		F3C7937C29C6E7B8006EA8EE /* Top5MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top5MoviesViewModel.swift; sourceTree = "<group>"; };
+		F3CE6BD72A595A0B00FA34F7 /* Movies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Movies.json; sourceTree = "<group>"; };
 		F3D0A97429CD5AA4000C6F7F /* MoviesViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModelType.swift; sourceTree = "<group>"; };
 		F3D0A97629CD5B1A000C6F7F /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
 		F3D0A97E29CDA181000C6F7F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -110,15 +125,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F30110B829A773D1004B22F1 /* RealmSwift in Frameworks */,
-				F30110B629A773D1004B22F1 /* Realm in Frameworks */,
-				F30110B129A77150004B22F1 /* Alamofire in Frameworks */,
+				F3CE6BD62A5954B300FA34F7 /* RealmSwift in Frameworks */,
+				F3CE6BD42A5954B300FA34F7 /* Realm in Frameworks */,
+				A26F224F921DEB7C2A5A9CED /* Pods_skylab_kino.framework in Frameworks */,
+				F3CE6BD12A59548100FA34F7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF80B8E9DB450CC4EEBE24CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31C810EB1B4E1293F178E497 /* Pods-skylab-kino.debug.xcconfig */,
+				A597D4B203F9A775EEE2BE38 /* Pods-skylab-kino.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1BDE28FC82EDA1DAA11E8FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B905B3E4E3F82BEB34ED6D0 /* Pods_skylab_kino.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F30110AC29A76CE8004B22F1 /* NetworkModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +182,8 @@
 		F30110C429A8BC84004B22F1 /* WatchList */ = {
 			isa = PBXGroup;
 			children = (
-				F3E8D23F29E162B80012BEC4 /* WatchListViewController.swift */,
+				F357660A29F69A1300492119 /* View */,
+				F357660C29F69A3B00492119 /* ViewModel */,
 			);
 			path = WatchList;
 			sourceTree = "<group>";
@@ -190,6 +224,7 @@
 				F3C7937C29C6E7B8006EA8EE /* Top5MoviesViewModel.swift */,
 				F3D0A97429CD5AA4000C6F7F /* MoviesViewModelType.swift */,
 				F3D0A97629CD5B1A000C6F7F /* MoviesViewModel.swift */,
+				F3CE6BD72A595A0B00FA34F7 /* Movies.json */,
 				F30110D329A8C09C004B22F1 /* GenresItemViewModel.swift */,
 				F30110D129A8C089004B22F1 /* GenresItemViewModelType.swift */,
 				F30110DC29A9CA50004B22F1 /* MovieItemViewModel.swift */,
@@ -248,6 +283,8 @@
 			children = (
 				F319B3EC299A399200D5C7EB /* skylab-kino */,
 				F319B3EB299A399200D5C7EB /* Products */,
+				EF80B8E9DB450CC4EEBE24CA /* Pods */,
+				F1BDE28FC82EDA1DAA11E8FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -275,6 +312,34 @@
 				F319B3FB299A399300D5C7EB /* Info.plist */,
 			);
 			path = "skylab-kino";
+			sourceTree = "<group>";
+		};
+		F357660A29F69A1300492119 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F357660B29F69A2400492119 /* Cells */,
+				F3E8D23F29E162B80012BEC4 /* WatchListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F357660B29F69A2400492119 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F3697E6C2A1CBA2000398ABB /* WatchListViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F357660C29F69A3B00492119 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F357660D29F69D1E00492119 /* WatchListViewModelType.swift */,
+				F357661129F69F9300492119 /* WatchListViewModel.swift */,
+				F3697E6E2A1CCA4F00398ABB /* WatchListItemViewModel.swift */,
+				F357660F29F69DC300492119 /* WatchListItemViewModelType.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F3D0A97C29CDA12E000C6F7F /* View */ = {
@@ -378,6 +443,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F319B3FE299A399300D5C7EB /* Build configuration list for PBXNativeTarget "skylab-kino" */;
 			buildPhases = (
+				F92131430BBB3600D2D8BFEC /* [CP] Check Pods Manifest.lock */,
+				F3E786E92A5714CC00D07A31 /* ShellScript */,
 				F319B3E6299A399200D5C7EB /* Sources */,
 				F319B3E7299A399200D5C7EB /* Frameworks */,
 				F319B3E8299A399200D5C7EB /* Resources */,
@@ -388,9 +455,9 @@
 			);
 			name = "skylab-kino";
 			packageProductDependencies = (
-				F30110B029A77150004B22F1 /* Alamofire */,
-				F30110B529A773D1004B22F1 /* Realm */,
-				F30110B729A773D1004B22F1 /* RealmSwift */,
+				F3CE6BD02A59548100FA34F7 /* Alamofire */,
+				F3CE6BD32A5954B300FA34F7 /* Realm */,
+				F3CE6BD52A5954B300FA34F7 /* RealmSwift */,
 			);
 			productName = "skylab-kino";
 			productReference = F319B3EA299A399200D5C7EB /* skylab-kino.app */;
@@ -421,8 +488,8 @@
 			);
 			mainGroup = F319B3E1299A399200D5C7EB;
 			packageReferences = (
-				F30110AF29A77150004B22F1 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				F30110B429A773D1004B22F1 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				F3CE6BCF2A59548100FA34F7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F3CE6BD22A5954B300FA34F7 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = F319B3EB299A399200D5C7EB /* Products */;
 			projectDirPath = "";
@@ -446,6 +513,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F3E786E92A5714CC00D07A31 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		F92131430BBB3600D2D8BFEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-skylab-kino-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F319B3E6299A399200D5C7EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -457,6 +567,8 @@
 				F3E8D23B29E14E250012BEC4 /* SearchHistoryItemViewModel.swift in Sources */,
 				F30110BC29A77456004B22F1 /* MovieRealmModel.swift in Sources */,
 				F3D0A97729CD5B1A000C6F7F /* MoviesViewModel.swift in Sources */,
+				F357661229F69F9300492119 /* WatchListViewModel.swift in Sources */,
+				F357660E29F69D1E00492119 /* WatchListViewModelType.swift in Sources */,
 				F30110A929A75CA2004B22F1 /* TMDBMoviesModel.swift in Sources */,
 				F3E8D23529E144840012BEC4 /* SearchHistoryViewModelType.swift in Sources */,
 				F30110A429A75970004B22F1 /* HomeViewController.swift in Sources */,
@@ -470,6 +582,7 @@
 				F319B3F2299A399200D5C7EB /* ViewController.swift in Sources */,
 				F30110DB29A9C9F8004B22F1 /* MovieItemViewModelType.swift in Sources */,
 				F30110D729A8C150004B22F1 /* MovieDetailsViewModelType.swift in Sources */,
+				F3697E6D2A1CBA2000398ABB /* WatchListViewCell.swift in Sources */,
 				F3D0A97F29CDA181000C6F7F /* SearchViewController.swift in Sources */,
 				F30110D029A8BEC9004B22F1 /* GenresViewModelType.swift in Sources */,
 				F30762C529B3179C00C10D2F /* NetworkManager.swift in Sources */,
@@ -485,6 +598,7 @@
 				F319B3F0299A399200D5C7EB /* SceneDelegate.swift in Sources */,
 				F3D9FA5A29A0AC6400E904A2 /* CheckBox.swift in Sources */,
 				F30762C029B2441C00C10D2F /* RepositoryType.swift in Sources */,
+				F357661029F69DC300492119 /* WatchListItemViewModelType.swift in Sources */,
 				F30110BD29A77456004B22F1 /* GenreRealmModel.swift in Sources */,
 				F3D9FA5629A0986600E904A2 /* UIColor+Extension.swift in Sources */,
 				F30762BB29B2426100C10D2F /* DomainGenre.swift in Sources */,
@@ -492,6 +606,7 @@
 				F30AF06829CABFA7000F65EE /* CustomSegmentedControl.swift in Sources */,
 				F3C7937D29C6E7B8006EA8EE /* Top5MoviesViewModel.swift in Sources */,
 				F30110AB29A76C71004B22F1 /* TMDBGenresModel.swift in Sources */,
+				F3697E6F2A1CCA4F00398ABB /* WatchListItemViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +748,7 @@
 		};
 		F319B3FF299A399300D5C7EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31C810EB1B4E1293F178E497 /* Pods-skylab-kino.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -661,6 +777,7 @@
 		};
 		F319B400299A399300D5C7EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A597D4B203F9A775EEE2BE38 /* Pods-skylab-kino.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -711,15 +828,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F30110AF29A77150004B22F1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		F3CE6BCF2A59548100FA34F7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
 			};
 		};
-		F30110B429A773D1004B22F1 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+		F3CE6BD22A5954B300FA34F7 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-cocoa.git";
 			requirement = {
@@ -730,19 +847,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F30110B029A77150004B22F1 /* Alamofire */ = {
+		F3CE6BD02A59548100FA34F7 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F30110AF29A77150004B22F1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = F3CE6BCF2A59548100FA34F7 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		F30110B529A773D1004B22F1 /* Realm */ = {
+		F3CE6BD32A5954B300FA34F7 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F30110B429A773D1004B22F1 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			package = F3CE6BD22A5954B300FA34F7 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = Realm;
 		};
-		F30110B729A773D1004B22F1 /* RealmSwift */ = {
+		F3CE6BD52A5954B300FA34F7 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F30110B429A773D1004B22F1 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			package = F3CE6BD22A5954B300FA34F7 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

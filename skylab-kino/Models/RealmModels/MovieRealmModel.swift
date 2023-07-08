@@ -29,7 +29,7 @@ class MovieRealmModel: RealmSwiftObject {
         self.init()
         self.adult = tmdbModel.adult
         self.backdropPath = tmdbModel.backdropPath
-        self.genreIDS.append(objectsIn: tmdbModel.genreIDS.map{$0})
+        self.genreIDS.append(objectsIn: tmdbModel.genreIDS.map {$0})
         self.id = tmdbModel.id
         self.originalLanguage = tmdbModel.originalLanguage
         self.originalTitle = tmdbModel.originalTitle
@@ -43,4 +43,3 @@ class MovieRealmModel: RealmSwiftObject {
         self.voteCount = tmdbModel.voteCount
     }
 }
-

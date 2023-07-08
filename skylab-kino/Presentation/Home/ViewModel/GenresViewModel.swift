@@ -11,31 +11,15 @@ class GenresViewModel: GenresViewModelType {
     private var selectedIndexPath: IndexPath?
     private var genres: [(genre: String, items: DomainMovies)]?
     
-    func getGenres(completion: @escaping () -> ()) {
+    func getGenres(completion: @escaping () -> Void) {
         genres = []
-//        genres?.append((genre: "Fantastik", items: [DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                    DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                    DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                    DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                    DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                    DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100)]))
-//        genres?.append((genre: "Triller", items: [DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                  DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                  DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                  DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                  DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                  DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100)]))
-//        genres?.append((genre: "Melodrame", items: [DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                    DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                    DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                    DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                    DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100),
-//                                                    DomainMovie(adult: false, backdropPath: "", genreIDS: [1], id: 1, originalLanguage: "Titanik", originalTitle: "Titanik", overview: "Texxt of overview", popularity: 5, posterPath: "poster1", releaseDate: "01.01.2023", title: "Тітанік", video: true, voteAverage: 10, voteCount: 100)]))
-        //genres = RealmManager.shared.fetchMoviesByGenres()
-        //let genres = NetworkService.fetchGenres(completion)
+        
+        // genres = RealmManager.shared.fetchMoviesByGenres()
+        // let genres = NetworkService.fetchGenres(completion)
         //        var tmdbGenres: [String] = {
         //            let genres = NetworkService.fetchGenres(com)
         //        }()
+        
         completion()
     }
     
@@ -68,6 +52,5 @@ class GenresViewModel: GenresViewModelType {
     func selectRow(atIndexPath indexPath: IndexPath) {
         self.selectedIndexPath = indexPath
     }
-    
     
 }

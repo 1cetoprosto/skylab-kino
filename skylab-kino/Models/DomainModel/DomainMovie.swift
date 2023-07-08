@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DomainMovie {
+struct DomainMovie: Codable {
     let adult: Bool
     let backdropPath: String
     let genreIDS: [Int]
