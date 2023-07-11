@@ -7,12 +7,12 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: BaseViewController, Storyboarded {
     
     @IBOutlet weak var suggestionsTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    private var searchHistoryViewModel: SearchHistoryViewModelType?
+    var searchHistoryViewModel: SearchHistoryViewModelType?
     // private var searchResaultViewModel: SearchHistoryViewModelType?
     
     override func viewWillAppear(_ animated: Bool) {

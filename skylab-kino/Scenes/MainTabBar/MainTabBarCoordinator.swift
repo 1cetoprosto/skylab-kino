@@ -14,11 +14,11 @@ class MainTabBarCoordinator: Coordinator {
     init(_ rootTabBarController: UITabBarController) {
         self.rootTabBarController = rootTabBarController
     }
-
+    
     override func start() {
         addHomePage()
-//        addWatchListPage()
-//        addSearchPage()
+        addSearchPage()
+        //addWatchListPage()
     }
     
     func addHomePage() {
@@ -27,20 +27,20 @@ class MainTabBarCoordinator: Coordinator {
         addChildCoordinator(coordinator)
         coordinator.start()
     }
-
-//    func addSearchPage() {
-//        let coordinator = SearchCoordinator(UINavigationController())
-//        rootTabBarController.viewControllers?.append(coordinator.rootController)
-//        addChildCoordinator(coordinator)
-//        coordinator.start()
-//    }
-//
-//    func addWatchListPage() {
-//        let coordinator = WatchListCordinator(UINavigationController())
-//        rootTabBarController.viewControllers?.append(coordinator.rootController)
-//        addChildCoordinator(coordinator)
-//        coordinator.start()
-//    }
-
+    
+    func addSearchPage() {
+        let coordinator = SearchCoordinator(UINavigationController())
+        rootTabBarController.viewControllers?.append(coordinator.rootController)
+        addChildCoordinator(coordinator)
+        coordinator.start()
+    }
+    
+    //    func addWatchListPage() {
+    //        let coordinator = WatchListCordinator(UINavigationController())
+    //        rootTabBarController.viewControllers?.append(coordinator.rootController)
+    //        addChildCoordinator(coordinator)
+    //        coordinator.start()
+    //    }
+    
 }
 
