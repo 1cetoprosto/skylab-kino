@@ -7,11 +7,11 @@
 
 import UIKit
 
-class WatchListViewController: UIViewController {
+class WatchListViewController: BaseViewController, Storyboarded {
 
     @IBOutlet weak var watchListTableView: UITableView!
     
-    private var watchListViewModel: WatchListViewModelType?
+    var watchListViewModel: WatchListViewModelType?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

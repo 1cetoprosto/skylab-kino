@@ -69,6 +69,9 @@
 		F3D43BE62A5D926D007817B3 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D43BE52A5D926D007817B3 /* SearchCoordinator.swift */; };
 		F3D43BE82A5D9361007817B3 /* SearchContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D43BE72A5D9361007817B3 /* SearchContainer.swift */; };
 		F3D43BEB2A5D9482007817B3 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D43BEA2A5D9482007817B3 /* SearchViewController.storyboard */; };
+		F3D43BED2A5D9D2A007817B3 /* WatchListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D43BEC2A5D9D2A007817B3 /* WatchListViewController.storyboard */; };
+		F3D43BEF2A5D9D77007817B3 /* WatchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D43BEE2A5D9D77007817B3 /* WatchListCoordinator.swift */; };
+		F3D43BF12A5D9E0E007817B3 /* WatchListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D43BF02A5D9E0E007817B3 /* WatchListContainer.swift */; };
 		F3D9FA5629A0986600E904A2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5529A0986600E904A2 /* UIColor+Extension.swift */; };
 		F3D9FA5829A0987100E904A2 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5729A0987100E904A2 /* DefaultButton.swift */; };
 		F3D9FA5A29A0AC6400E904A2 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5929A0AC6400E904A2 /* CheckBox.swift */; };
@@ -141,6 +144,9 @@
 		F3D43BE52A5D926D007817B3 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		F3D43BE72A5D9361007817B3 /* SearchContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContainer.swift; sourceTree = "<group>"; };
 		F3D43BEA2A5D9482007817B3 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
+		F3D43BEC2A5D9D2A007817B3 /* WatchListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WatchListViewController.storyboard; sourceTree = "<group>"; };
+		F3D43BEE2A5D9D77007817B3 /* WatchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListCoordinator.swift; sourceTree = "<group>"; };
+		F3D43BF02A5D9E0E007817B3 /* WatchListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListContainer.swift; sourceTree = "<group>"; };
 		F3D9FA5529A0986600E904A2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		F3D9FA5729A0987100E904A2 /* DefaultButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		F3D9FA5929A0AC6400E904A2 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
@@ -203,8 +209,10 @@
 		F30110C429A8BC84004B22F1 /* WatchList */ = {
 			isa = PBXGroup;
 			children = (
-				F357660A29F69A1300492119 /* View */,
+				F3D43BEE2A5D9D77007817B3 /* WatchListCoordinator.swift */,
+				F3D43BF22A5D9E70007817B3 /* DI */,
 				F357660C29F69A3B00492119 /* ViewModel */,
+				F357660A29F69A1300492119 /* View */,
 			);
 			path = WatchList;
 			sourceTree = "<group>";
@@ -341,6 +349,7 @@
 			children = (
 				F357660B29F69A2400492119 /* Cells */,
 				F3E8D23F29E162B80012BEC4 /* WatchListViewController.swift */,
+				F3D43BEC2A5D9D2A007817B3 /* WatchListViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -444,6 +453,14 @@
 			isa = PBXGroup;
 			children = (
 				F3D43BE72A5D9361007817B3 /* SearchContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		F3D43BF22A5D9E70007817B3 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				F3D43BF02A5D9E0E007817B3 /* WatchListContainer.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -600,6 +617,7 @@
 			files = (
 				F319B3FA299A399300D5C7EB /* LaunchScreen.storyboard in Resources */,
 				F319B3F7299A399300D5C7EB /* Assets.xcassets in Resources */,
+				F3D43BED2A5D9D2A007817B3 /* WatchListViewController.storyboard in Resources */,
 				F36435462A5C00C200A91CE5 /* HomeViewController.storyboard in Resources */,
 				F3D43BEB2A5D9482007817B3 /* SearchViewController.storyboard in Resources */,
 				F3E9E2EC2A5978D100E23450 /* Top5Movies.json in Resources */,
@@ -645,6 +663,7 @@
 				F36435442A5BFFDE00A91CE5 /* Storyboarded.swift in Sources */,
 				F30110DB29A9C9F8004B22F1 /* MovieItemViewModelType.swift in Sources */,
 				F30110D729A8C150004B22F1 /* MovieDetailsViewModelType.swift in Sources */,
+				F3D43BF12A5D9E0E007817B3 /* WatchListContainer.swift in Sources */,
 				F3697E6D2A1CBA2000398ABB /* WatchListViewCell.swift in Sources */,
 				F3D0A97F29CDA181000C6F7F /* SearchViewController.swift in Sources */,
 				F30110D029A8BEC9004B22F1 /* GenresViewModelType.swift in Sources */,
@@ -652,6 +671,7 @@
 				F30762C229B3122B00C10D2F /* Endpoint.swift in Sources */,
 				F36435322A5B363200A91CE5 /* MainTabBarCoordinator.swift in Sources */,
 				F30AF06A29CD541D000F65EE /* MovieCollectionViewCell.swift in Sources */,
+				F3D43BEF2A5D9D77007817B3 /* WatchListCoordinator.swift in Sources */,
 				F30110B329A77365004B22F1 /* RealmManager.swift in Sources */,
 				F3E8D23929E14BA00012BEC4 /* SearchHistoryViewModel.swift in Sources */,
 				F3E8D23E29E158910012BEC4 /* SearchHistoryViewCell.swift in Sources */,
