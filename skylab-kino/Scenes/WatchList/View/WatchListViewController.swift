@@ -28,6 +28,9 @@ class WatchListViewController: BaseViewController, Storyboarded {
         watchListTableView.dataSource = self
         watchListTableView.delegate = self
         
+        let nib = UINib(nibName: "MovieTableViewCell", bundle: nil)
+        watchListTableView.register(nib, forCellReuseIdentifier: "MovieTableViewCell")
+        
     }
 
 }
@@ -38,7 +41,7 @@ extension WatchListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "WatchListViewCell", for: indexPath) as? WatchListViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell", for: indexPath) as? MovieTableViewCell
         
         guard let cell, let watchListViewModel else { return UITableViewCell() }
         
