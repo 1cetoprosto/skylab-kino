@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UICollectionViewDelegate {
+class HomeViewController: BaseViewController, Storyboarded, UICollectionViewDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var top5CollectionView: UICollectionView!
@@ -20,8 +20,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate {
     }
     @IBOutlet weak var movieCollectionView: UICollectionView!
     
-    private var top5MoviesViewModel: Top5MoviesViewModelType?
-    private var moviesViewModel: MoviesViewModelType?
+    var top5MoviesViewModel: Top5MoviesViewModelType?
+    var moviesViewModel: MoviesViewModelType?
     private var isLoading = false
     
     override func viewWillAppear(_ animated: Bool) {

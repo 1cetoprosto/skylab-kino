@@ -4,5 +4,5 @@ line_length:
 disabled_rules:
   - trailing_whitespace
 excluded:
-  - Pods
+  - Sources/RxSwift
 
