@@ -18,8 +18,8 @@ class MainTabBarViewController: UITabBarController {
         self.viewControllers = [UIViewController()]
         self.viewControllers = []
 
-        tabBar.tintColor = UIColor.Main.black
-        tabBar.unselectedItemTintColor = UIColor.Main.black
+        tabBar.tintColor = UIColor.Main.blue
+        tabBar.unselectedItemTintColor = UIColor.Main.gray
     }
 }
 

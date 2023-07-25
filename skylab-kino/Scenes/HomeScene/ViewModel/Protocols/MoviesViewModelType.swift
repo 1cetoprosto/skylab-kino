@@ -8,7 +8,7 @@
 import Foundation
 
 protocol MoviesViewModelType {
-    func getMovies(completion: @escaping() -> Void)
+    func getMovies()
     
     func numberOfItemsInSection(for section: Int) -> Int
     func cellViewModel(for indexPath: IndexPath) -> MovieItemViewModelType?

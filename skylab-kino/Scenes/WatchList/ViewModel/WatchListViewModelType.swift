@@ -8,7 +8,7 @@
 import Foundation
 
 protocol WatchListViewModelType {
-    func getWatchList(completion: @escaping() -> Void)
+    func getWatchList()
     func numberOfRowInSection(for section: Int) -> Int
     func cellViewModel(for indexPath: IndexPath) -> WatchListItemViewModelType?
     func viewModelForSelectedRow() -> WatchListItemViewModelType?

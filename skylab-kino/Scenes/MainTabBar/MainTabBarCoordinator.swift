@@ -35,12 +35,12 @@ class MainTabBarCoordinator: Coordinator {
         coordinator.start()
     }
     
-        func addWatchListPage() {
-            let coordinator = WatchListCoordinator(UINavigationController())
-            rootTabBarController.viewControllers?.append(coordinator.rootController)
-            addChildCoordinator(coordinator)
-            coordinator.start()
-        }
+    func addWatchListPage() {
+        let coordinator = WatchListCoordinator(UINavigationController())
+        rootTabBarController.viewControllers?.append(coordinator.rootController)
+        addChildCoordinator(coordinator)
+        coordinator.start()
+    }
     
 }
 

@@ -19,6 +19,7 @@ class CustomSegmentedControl: UIView {
     var textColor: UIColor = .white
     var selectorViewColor: UIColor = .blue
     var selectorTextColor: UIColor = .black
+    var selectorFont: UIFont = .systemFont(ofSize: 14)
     
     weak var delegate: CustomSegmentedControlDelegate?
     
@@ -31,7 +32,6 @@ class CustomSegmentedControl: UIView {
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        self.backgroundColor = .white
         updateView()
     }
     
@@ -102,6 +102,7 @@ extension CustomSegmentedControl {
         for buttonTitle in buttonTitles {
             let button = UIButton(type: .system)
             button.setTitle(buttonTitle, for: .normal)
+            button.titleLabel?.font = selectorFont
             button.addTarget(self, action: #selector(CustomSegmentedControl.buttonAction(sender:)), for: .touchUpInside)
             button.setTitleColor(textColor, for: .normal)
             buttons.append(button)

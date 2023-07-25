@@ -15,6 +15,7 @@ class MovieTableViewCell: UITableViewCell {
         willSet(viewModel) {
             guard let viewModel = viewModel else { return }
             movieLabel.text = viewModel.title
+            movieLabel.configureCustomLabel(font: .regular(size: 16), textColor: UIColor.Main.white, nil)
         }
     }
     

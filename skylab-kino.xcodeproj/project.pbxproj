@@ -83,6 +83,8 @@
 		F3E8D24029E162B80012BEC4 /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23F29E162B80012BEC4 /* WatchListViewController.swift */; };
 		F3E9E2EA2A59784D00E23450 /* Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = F3CE6BD72A595A0B00FA34F7 /* Movies.json */; };
 		F3E9E2EC2A5978D100E23450 /* Top5Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = F3E9E2EB2A5978D100E23450 /* Top5Movies.json */; };
+		F3FC165D2A6912800074B57F /* Montserrat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC165C2A6912800074B57F /* Montserrat.swift */; };
+		F3FC165F2A6914190074B57F /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC165E2A6914190074B57F /* UILabel+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,6 +159,11 @@
 		F3E8D23D29E158910012BEC4 /* SearchHistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryViewCell.swift; sourceTree = "<group>"; };
 		F3E8D23F29E162B80012BEC4 /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 		F3E9E2EB2A5978D100E23450 /* Top5Movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Top5Movies.json; sourceTree = "<group>"; };
+		F3FC16592A6911EA0074B57F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		F3FC165A2A6911EA0074B57F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		F3FC165B2A6911EA0074B57F /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		F3FC165C2A6912800074B57F /* Montserrat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Montserrat.swift; sourceTree = "<group>"; };
+		F3FC165E2A6914190074B57F /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +341,7 @@
 				F3D9FA4E29A0963A00E904A2 /* Extensions */,
 				F3D9FA5329A096D700E904A2 /* Models */,
 				F3D9FA5029A0966600E904A2 /* Services */,
+				F3FC16542A6910650074B57F /* Fonts */,
 				F319B3F3299A399200D5C7EB /* Main.storyboard */,
 				F319B3F6299A399300D5C7EB /* Assets.xcassets */,
 				F319B3F8299A399300D5C7EB /* LaunchScreen.storyboard */,
@@ -484,6 +492,7 @@
 			isa = PBXGroup;
 			children = (
 				F3D9FA5529A0986600E904A2 /* UIColor+Extension.swift */,
+				F3FC165E2A6914190074B57F /* UILabel+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -548,6 +557,17 @@
 				F3E8D23D29E158910012BEC4 /* SearchHistoryViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		F3FC16542A6910650074B57F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F3FC165C2A6912800074B57F /* Montserrat.swift */,
+				F3FC165B2A6911EA0074B57F /* Montserrat-Medium.ttf */,
+				F3FC16592A6911EA0074B57F /* Montserrat-Regular.ttf */,
+				F3FC165A2A6911EA0074B57F /* Montserrat-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -652,6 +672,7 @@
 				F3D43BE82A5D9361007817B3 /* SearchContainer.swift in Sources */,
 				F36435362A5B382000A91CE5 /* HomeCoordinator.swift in Sources */,
 				F357661229F69F9300492119 /* WatchListViewModel.swift in Sources */,
+				F3FC165D2A6912800074B57F /* Montserrat.swift in Sources */,
 				F357660E29F69D1E00492119 /* WatchListViewModelType.swift in Sources */,
 				F30110A929A75CA2004B22F1 /* TMDBMoviesModel.swift in Sources */,
 				F364353F2A5BFDCA00A91CE5 /* BaseViewController.swift in Sources */,
@@ -669,6 +690,7 @@
 				F36435482A5C044000A91CE5 /* AppCoordinator.swift in Sources */,
 				F319B3F2299A399200D5C7EB /* ViewController.swift in Sources */,
 				F36435442A5BFFDE00A91CE5 /* Storyboarded.swift in Sources */,
+				F3FC165F2A6914190074B57F /* UILabel+Extension.swift in Sources */,
 				F30110DB29A9C9F8004B22F1 /* MovieItemViewModelType.swift in Sources */,
 				F30110D729A8C150004B22F1 /* MovieDetailsViewModelType.swift in Sources */,
 				F3D43BF12A5D9E0E007817B3 /* WatchListContainer.swift in Sources */,

@@ -9,22 +9,27 @@ import UIKit
 
 class WatchListViewController: BaseViewController, Storyboarded {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var watchListTableView: UITableView!
     
-    var watchListViewModel: WatchListViewModelType?
+    // MARK: - let/var
+    var viewModel: WatchListViewModelType?
     
+    // MARK: - lifecycle func
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        watchListViewModel = WatchListViewModel()
-        watchListViewModel?.getWatchList { [weak self] in
-            self?.watchListTableView.reloadData()
-        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configureWatchListTableView()
+        viewModel?.getWatchList()
+    }
+    
+    // MARK: - UI Configuration funcs
+    fileprivate func configureWatchListTableView() {
+        
         watchListTableView.dataSource = self
         watchListTableView.delegate = self
         
@@ -32,20 +37,20 @@ class WatchListViewController: BaseViewController, Storyboarded {
         watchListTableView.register(nib, forCellReuseIdentifier: "MovieTableViewCell")
         
     }
-
 }
 
+// MARK: - Extensions
 extension WatchListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        watchListViewModel?.numberOfRowInSection(for: section) ?? 0
+        viewModel?.numberOfRowInSection(for: section) ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell", for: indexPath) as? MovieTableViewCell
         
-        guard let cell, let watchListViewModel else { return UITableViewCell() }
+        guard let cell, let viewModel else { return UITableViewCell() }
         
-        let cellViewModel = watchListViewModel.cellViewModel(for: indexPath)
+        let cellViewModel = viewModel.cellViewModel(for: indexPath)
 
         cell.viewModel = cellViewModel
         

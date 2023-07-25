@@ -13,7 +13,7 @@ class WatchListViewModel: WatchListViewModelType {
     
     private var movies: DomainMovies?
     
-    func getWatchList(completion: @escaping () -> Void) {
+    func getWatchList() {
         movies = []
         movies?.append(DomainMovie(adult: false,
                                    backdropPath: "",

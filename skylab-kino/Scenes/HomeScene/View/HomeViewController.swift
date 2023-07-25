@@ -9,33 +9,20 @@ import UIKit
 
 class HomeViewController: BaseViewController, Storyboarded, UICollectionViewDelegate {
     
+    // MARK: - IBOutlets
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var top5CollectionView: UICollectionView!
-    @IBOutlet weak var requestSegmented: CustomSegmentedControl! {
-        didSet {
-            requestSegmented.setButtonTitles(buttonTitles: ["Now playing", "Upcoming", "Top rated", "Popular"])
-            requestSegmented.selectorViewColor = UIColor.Main.gray
-            requestSegmented.selectorTextColor = UIColor.Main.white
-        }
-    }
+    @IBOutlet weak var requestSegmented: CustomSegmentedControl! 
     @IBOutlet weak var movieCollectionView: UICollectionView!
     
+    // MARK: - let/var
     var top5MoviesViewModel: Top5MoviesViewModelType?
     var moviesViewModel: MoviesViewModelType?
     private var isLoading = false
     
+    // MARK: - lifecycle func
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        top5MoviesViewModel = Top5MoviesViewModel()
-        top5MoviesViewModel?.getTop5Movies { [weak self] in
-            self?.top5CollectionView.reloadData()
-        }
-        
-        moviesViewModel = MoviesViewModel()
-        moviesViewModel?.getMovies { [weak self] in
-            self?.movieCollectionView.reloadData()
-        }
     }
     
     override func viewDidLoad() {
@@ -47,9 +34,23 @@ class HomeViewController: BaseViewController, Storyboarded, UICollectionViewDele
         movieCollectionView.dataSource = self
         movieCollectionView.delegate = self
         
+        configureUI()
+        
+        top5MoviesViewModel?.getTop5Movies()
+        moviesViewModel?.getMovies()
+    }
+    
+    // MARK: - UI Configuration funcs
+    private func configureUI() {
+        
+        requestSegmented.setButtonTitles(buttonTitles: ["Now playing", "Upcoming", "Top rated", "Popular"])
+        requestSegmented.selectorViewColor = UIColor.Main.gray
+        requestSegmented.selectorTextColor = UIColor.Main.white
+        requestSegmented.selectorFont = Montserrat.medium(size: 14).font()
     }
 }
 
+// MARK: - Extensions
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == top5CollectionView {
@@ -82,23 +83,4 @@ extension HomeViewController: UICollectionViewDataSource {
             return cell
         }
     }
-    
 }
-
-// extension HomeViewController: UICollectionViewDelegate {
-//
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        if collectionView == top5CollectionView {
-//            top5CollectionView.didSelectItemAt(indexPath: indexPath, in: collectionView)
-//        } else {
-//            movieCollectionView.didSelectItemAt(indexPath: indexPath, in: collectionView)
-//        }
-//    }
-//
-// }
-
-// extension HomeViewController: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        CGSize(width: 144, height: 250)
-//    }
-// }

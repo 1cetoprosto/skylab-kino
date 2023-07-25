@@ -12,27 +12,19 @@ extension UIColor {
     struct Main {
         static var white: UIColor { HEX.hFFFFFF }
         static var black: UIColor { HEX.h1E1E1E }
-        static var gray: UIColor { HEX.h3A3F47 }
         static var blue: UIColor { HEX.h0296E5 }
+        static var gray: UIColor { HEX.h67686D }
+        static var backgound: UIColor { HEX.h242A32 }
     }
-
-//    struct TabBar {
-//        static var tint: UIColor { HEX.h50746C }
-//    }
-//
-//    struct TableView {
-//        static var cellBackground: UIColor { HEX.h1E1E1E }
-//        static var cellLabel: UIColor { HEX.h000000 }
-//    }
 
     fileprivate struct HEX {
         // main colors
         static let hFFFFFF = UIColor(hex: 0xFFFFFF)
         static let h1E1E1E = UIColor(hex: 0x1E1E1E)
-        static let h3A3F47 = UIColor(hex: 0x3A3F47)
         static let h0296E5 = UIColor(hex: 0x0296E5)
+        static let h67686D = UIColor(hex: 0x67686D)
+        static let h242A32 = UIColor(hex: 0x242A32)
     }
-
 }
 
 extension UIColor {

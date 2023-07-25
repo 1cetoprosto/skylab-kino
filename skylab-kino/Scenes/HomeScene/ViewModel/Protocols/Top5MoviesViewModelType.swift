@@ -8,7 +8,8 @@
 import Foundation
 
 protocol Top5MoviesViewModelType {
-    func getTop5Movies(completion: @escaping() -> Void)
+    func getTop5Movies()
+    
     func numberOfItemsInSection(for section: Int) -> Int
     func cellViewModel(for indexPath: IndexPath) -> MovieItemViewModelType?
 }

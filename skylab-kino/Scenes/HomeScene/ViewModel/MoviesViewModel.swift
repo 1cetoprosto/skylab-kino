@@ -11,15 +11,13 @@ class MoviesViewModel: MoviesViewModelType {
     
     private var movies: DomainMovies?
     
-    func getMovies(completion: @escaping () -> Void) {
-        
+    func getMovies() {
         loadMoviesFromJSON { [weak self] movies in
-            if let movies = movies {
+            if let movies {
                 self?.movies = movies
             } else {
                 self?.movies = []
             }
-            completion()
         }
     }
     
