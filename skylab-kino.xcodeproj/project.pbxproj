@@ -32,8 +32,8 @@
 		F30AF06829CABFA7000F65EE /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AF06729CABFA7000F65EE /* CustomSegmentedControl.swift */; };
 		F30AF06A29CD541D000F65EE /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AF06929CD541D000F65EE /* MovieCollectionViewCell.swift */; };
 		F319B3EE299A399200D5C7EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319B3ED299A399200D5C7EB /* AppDelegate.swift */; };
-		F319B3F2299A399200D5C7EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319B3F1299A399200D5C7EB /* ViewController.swift */; };
-		F319B3F5299A399200D5C7EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F3299A399200D5C7EB /* Main.storyboard */; };
+		F319B3F2299A399200D5C7EB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319B3F1299A399200D5C7EB /* LoginViewController.swift */; };
+		F319B3F5299A399200D5C7EB /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F3299A399200D5C7EB /* LoginViewController.storyboard */; };
 		F319B3F7299A399300D5C7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F6299A399300D5C7EB /* Assets.xcassets */; };
 		F319B3FA299A399300D5C7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F8299A399300D5C7EB /* LaunchScreen.storyboard */; };
 		F357660E29F69D1E00492119 /* WatchListViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357660D29F69D1E00492119 /* WatchListViewModelType.swift */; };
@@ -55,6 +55,7 @@
 		F36435482A5C044000A91CE5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36435472A5C044000A91CE5 /* AppCoordinator.swift */; };
 		F3697E6D2A1CBA2000398ABB /* WatchListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3697E6C2A1CBA2000398ABB /* WatchListViewCell.swift */; };
 		F3697E6F2A1CCA4F00398ABB /* WatchListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3697E6E2A1CCA4F00398ABB /* WatchListItemViewModel.swift */; };
+		F36EBA442A6FF13800E4B8AA /* WatchListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36EBA432A6FF13800E4B8AA /* WatchListViewCell.xib */; };
 		F3C7937B29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7937A29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift */; };
 		F3C7937D29C6E7B8006EA8EE /* Top5MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7937C29C6E7B8006EA8EE /* Top5MoviesViewModel.swift */; };
 		F3CE6BD12A59548100FA34F7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F3CE6BD02A59548100FA34F7 /* Alamofire */; };
@@ -114,8 +115,8 @@
 		F30AF06929CD541D000F65EE /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		F319B3EA299A399200D5C7EB /* skylab-kino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skylab-kino.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F319B3ED299A399200D5C7EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F319B3F1299A399200D5C7EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F319B3F4299A399200D5C7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F319B3F1299A399200D5C7EB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F319B3F4299A399200D5C7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginViewController.storyboard; sourceTree = "<group>"; };
 		F319B3F6299A399300D5C7EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F319B3F9299A399300D5C7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F319B3FB299A399300D5C7EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,6 +135,7 @@
 		F36435472A5C044000A91CE5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F3697E6C2A1CBA2000398ABB /* WatchListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewCell.swift; sourceTree = "<group>"; };
 		F3697E6E2A1CCA4F00398ABB /* WatchListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListItemViewModel.swift; sourceTree = "<group>"; };
+		F36EBA432A6FF13800E4B8AA /* WatchListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchListViewCell.xib; sourceTree = "<group>"; };
 		F3C7937A29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top5MoviesViewModelType.swift; sourceTree = "<group>"; };
 		F3C7937C29C6E7B8006EA8EE /* Top5MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top5MoviesViewModel.swift; sourceTree = "<group>"; };
 		F3CE6BD72A595A0B00FA34F7 /* Movies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Movies.json; sourceTree = "<group>"; };
@@ -277,12 +279,13 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		F30110CC29A8BE2E004B22F1 /* Authorization */ = {
+		F30110CC29A8BE2E004B22F1 /* LoginScene */ = {
 			isa = PBXGroup;
 			children = (
-				F319B3F1299A399200D5C7EB /* ViewController.swift */,
+				F319B3F1299A399200D5C7EB /* LoginViewController.swift */,
+				F319B3F3299A399200D5C7EB /* LoginViewController.storyboard */,
 			);
-			path = Authorization;
+			path = LoginScene;
 			sourceTree = "<group>";
 		};
 		F30110D529A8C0EC004B22F1 /* ViewModel */ = {
@@ -342,7 +345,6 @@
 				F3D9FA5329A096D700E904A2 /* Models */,
 				F3D9FA5029A0966600E904A2 /* Services */,
 				F3FC16542A6910650074B57F /* Fonts */,
-				F319B3F3299A399200D5C7EB /* Main.storyboard */,
 				F319B3F6299A399300D5C7EB /* Assets.xcassets */,
 				F319B3F8299A399300D5C7EB /* LaunchScreen.storyboard */,
 				F319B3FB299A399300D5C7EB /* Info.plist */,
@@ -364,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				F3697E6C2A1CBA2000398ABB /* WatchListViewCell.swift */,
+				F36EBA432A6FF13800E4B8AA /* WatchListViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -520,7 +523,7 @@
 				F36435252A5B275200A91CE5 /* Coordinator.swift */,
 				F36435472A5C044000A91CE5 /* AppCoordinator.swift */,
 				F36435302A5B361100A91CE5 /* MainTabBar */,
-				F30110CC29A8BE2E004B22F1 /* Authorization */,
+				F30110CC29A8BE2E004B22F1 /* LoginScene */,
 				F30110C529A8BC97004B22F1 /* HomeScene */,
 				F30110C329A8BC4E004B22F1 /* Search */,
 				F30110C429A8BC84004B22F1 /* WatchList */,
@@ -650,7 +653,8 @@
 				F3D43BEB2A5D9482007817B3 /* SearchViewController.storyboard in Resources */,
 				F3E9E2EC2A5978D100E23450 /* Top5Movies.json in Resources */,
 				F3E9E2EA2A59784D00E23450 /* Movies.json in Resources */,
-				F319B3F5299A399200D5C7EB /* Main.storyboard in Resources */,
+				F319B3F5299A399200D5C7EB /* LoginViewController.storyboard in Resources */,
+				F36EBA442A6FF13800E4B8AA /* WatchListViewCell.xib in Resources */,
 				F3D43BF72A5DA44A007817B3 /* MovieTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -688,7 +692,7 @@
 				F364353C2A5BFB0E00A91CE5 /* HomeContainer.swift in Sources */,
 				F30110D429A8C09C004B22F1 /* GenresItemViewModel.swift in Sources */,
 				F36435482A5C044000A91CE5 /* AppCoordinator.swift in Sources */,
-				F319B3F2299A399200D5C7EB /* ViewController.swift in Sources */,
+				F319B3F2299A399200D5C7EB /* LoginViewController.swift in Sources */,
 				F36435442A5BFFDE00A91CE5 /* Storyboarded.swift in Sources */,
 				F3FC165F2A6914190074B57F /* UILabel+Extension.swift in Sources */,
 				F30110DB29A9C9F8004B22F1 /* MovieItemViewModelType.swift in Sources */,
@@ -730,12 +734,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F319B3F3299A399200D5C7EB /* Main.storyboard */ = {
+		F319B3F3299A399200D5C7EB /* LoginViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F319B3F4299A399200D5C7EB /* Base */,
 			);
-			name = Main.storyboard;
+			name = LoginViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		F319B3F8299A399300D5C7EB /* LaunchScreen.storyboard */ = {
