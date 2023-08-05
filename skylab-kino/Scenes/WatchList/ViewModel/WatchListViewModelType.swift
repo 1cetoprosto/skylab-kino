@@ -8,9 +8,12 @@
 import Foundation
 
 protocol WatchListViewModelType {
+    var isEmpty: Bool { get }
+    
     func getWatchList()
+    func removeItem(at indexPath: IndexPath)
     func numberOfRowInSection(for section: Int) -> Int
-    func cellViewModel(for indexPath: IndexPath) -> WatchListItemViewModelType?
-    func viewModelForSelectedRow() -> WatchListItemViewModelType?
+    func cellViewModel(for indexPath: IndexPath) -> MovieItemViewModelType?
+    func viewModelForSelectedRow() -> MovieItemViewModelType?
     func selectRow(atIndexPath indexPath: IndexPath)
 }

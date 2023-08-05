@@ -15,6 +15,7 @@ extension UIColor {
         static var blue: UIColor { HEX.h0296E5 }
         static var gray: UIColor { HEX.h67686D }
         static var backgound: UIColor { HEX.h242A32 }
+        static var secondaryOrange: UIColor { HEX.hFF8700 }
     }
 
     fileprivate struct HEX {
@@ -24,6 +25,7 @@ extension UIColor {
         static let h0296E5 = UIColor(hex: 0x0296E5)
         static let h67686D = UIColor(hex: 0x67686D)
         static let h242A32 = UIColor(hex: 0x242A32)
+        static let hFF8700 = UIColor(hex: 0xFF8700)
     }
 }
 

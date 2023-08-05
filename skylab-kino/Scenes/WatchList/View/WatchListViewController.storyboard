@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,24 +28,67 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3z1-ek-wIG">
                                 <rect key="frame" x="20" y="99" width="353" height="719"/>
-                                <color key="backgroundColor" red="0.14117647059999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.21960784310000001" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexColor" systemColor="systemGreenColor"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="systemMintColor"/>
+                                <color key="sectionIndexTrackingBackgroundColor" systemColor="systemBlueColor"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exG-St-Sbb">
+                                <rect key="frame" x="70.666666666666686" y="344" width="252" height="164"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Magic-box 1" translatesAutoresizingMaskIntoConstraints="NO" id="Tl1-kI-Kwv">
+                                        <rect key="frame" x="87.999999999999986" y="0.0" width="76.000000000000014" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="YPq-DA-SJa"/>
+                                            <constraint firstAttribute="width" constant="76" id="ibe-jZ-Scf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83L-Os-rLJ">
+                                        <rect key="frame" x="105.99999999999999" y="92" width="39.666666666666671" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBk-S2-xvM">
+                                        <rect key="frame" x="110.33333333333333" y="119.33333333333331" width="30.999999999999986" height="14.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="83L-Os-rLJ" firstAttribute="top" secondItem="Tl1-kI-Kwv" secondAttribute="bottom" constant="16" id="Gvf-3Z-Ct8"/>
+                                    <constraint firstItem="Tl1-kI-Kwv" firstAttribute="centerX" secondItem="exG-St-Sbb" secondAttribute="centerX" id="KtL-gv-l2S"/>
+                                    <constraint firstAttribute="width" constant="252" id="TwB-qJ-tN5"/>
+                                    <constraint firstItem="nBk-S2-xvM" firstAttribute="top" secondItem="83L-Os-rLJ" secondAttribute="bottom" constant="8" id="bCk-kY-Cn5"/>
+                                    <constraint firstAttribute="height" constant="164" id="fWq-fp-ENs"/>
+                                    <constraint firstItem="nBk-S2-xvM" firstAttribute="centerX" secondItem="exG-St-Sbb" secondAttribute="centerX" id="lMq-1Y-gcD"/>
+                                    <constraint firstItem="83L-Os-rLJ" firstAttribute="centerX" secondItem="exG-St-Sbb" secondAttribute="centerX" id="mxd-n2-ame"/>
+                                    <constraint firstItem="Tl1-kI-Kwv" firstAttribute="top" secondItem="exG-St-Sbb" secondAttribute="top" id="web-NG-lEc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gxl-TV-bxM"/>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="OUZ-mW-JeU" firstAttribute="top" secondItem="Gxl-TV-bxM" secondAttribute="top" id="3Dl-7f-WlI"/>
                             <constraint firstItem="3z1-ek-wIG" firstAttribute="trailing" secondItem="Gxl-TV-bxM" secondAttribute="trailing" constant="-20" id="ARZ-J9-nKF"/>
+                            <constraint firstItem="exG-St-Sbb" firstAttribute="centerX" secondItem="Nep-O8-M0L" secondAttribute="centerX" id="MSr-1Y-tyt"/>
                             <constraint firstItem="3z1-ek-wIG" firstAttribute="bottom" secondItem="Gxl-TV-bxM" secondAttribute="bottom" id="TPD-TA-Lif"/>
                             <constraint firstItem="3z1-ek-wIG" firstAttribute="leading" secondItem="Gxl-TV-bxM" secondAttribute="leading" constant="20" id="fPy-pL-P05"/>
                             <constraint firstItem="OUZ-mW-JeU" firstAttribute="centerX" secondItem="Nep-O8-M0L" secondAttribute="centerX" id="gxY-XO-cFj"/>
                             <constraint firstItem="3z1-ek-wIG" firstAttribute="top" secondItem="OUZ-mW-JeU" secondAttribute="bottom" constant="20" id="v8X-jI-xaW"/>
+                            <constraint firstItem="exG-St-Sbb" firstAttribute="centerY" secondItem="Nep-O8-M0L" secondAttribute="centerY" id="zy3-Vt-8Mr"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Watch list" image="Favorites" id="nPy-23-fVn">
                         <color key="badgeColor" red="0.4039215686" green="0.40784313729999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="emptyWishlistView" destination="exG-St-Sbb" id="5dR-R3-IpB"/>
+                        <outlet property="findYourMovieLabel" destination="nBk-S2-xvM" id="b2H-2c-uny"/>
+                        <outlet property="noMovieLabel" destination="83L-Os-rLJ" id="OY9-AL-evm"/>
                         <outlet property="watchListTableView" destination="3z1-ek-wIG" id="LCH-6R-nHE"/>
                     </connections>
                 </viewController>
@@ -55,5 +99,18 @@
     </scenes>
     <resources>
         <image name="Favorites" width="16" height="22"/>
+        <image name="Magic-box 1" width="74" height="76"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

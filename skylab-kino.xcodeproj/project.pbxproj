@@ -37,7 +37,6 @@
 		F319B3F7299A399300D5C7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F6299A399300D5C7EB /* Assets.xcassets */; };
 		F319B3FA299A399300D5C7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F8299A399300D5C7EB /* LaunchScreen.storyboard */; };
 		F357660E29F69D1E00492119 /* WatchListViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357660D29F69D1E00492119 /* WatchListViewModelType.swift */; };
-		F357661029F69DC300492119 /* WatchListItemViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357660F29F69DC300492119 /* WatchListItemViewModelType.swift */; };
 		F357661229F69F9300492119 /* WatchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357661129F69F9300492119 /* WatchListViewModel.swift */; };
 		F36435262A5B275200A91CE5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36435252A5B275200A91CE5 /* Coordinator.swift */; };
 		F364352B2A5B2FC500A91CE5 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F364352A2A5B2FC500A91CE5 /* RxCocoa */; };
@@ -53,9 +52,9 @@
 		F36435442A5BFFDE00A91CE5 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36435432A5BFFDE00A91CE5 /* Storyboarded.swift */; };
 		F36435462A5C00C200A91CE5 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36435452A5C00C200A91CE5 /* HomeViewController.storyboard */; };
 		F36435482A5C044000A91CE5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36435472A5C044000A91CE5 /* AppCoordinator.swift */; };
-		F3697E6D2A1CBA2000398ABB /* WatchListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3697E6C2A1CBA2000398ABB /* WatchListViewCell.swift */; };
+		F3697E6D2A1CBA2000398ABB /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3697E6C2A1CBA2000398ABB /* MovieTableViewCell.swift */; };
 		F3697E6F2A1CCA4F00398ABB /* WatchListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3697E6E2A1CCA4F00398ABB /* WatchListItemViewModel.swift */; };
-		F36EBA442A6FF13800E4B8AA /* WatchListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36EBA432A6FF13800E4B8AA /* WatchListViewCell.xib */; };
+		F36EBA442A6FF13800E4B8AA /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36EBA432A6FF13800E4B8AA /* MovieTableViewCell.xib */; };
 		F3C7937B29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7937A29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift */; };
 		F3C7937D29C6E7B8006EA8EE /* Top5MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7937C29C6E7B8006EA8EE /* Top5MoviesViewModel.swift */; };
 		F3CE6BD12A59548100FA34F7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F3CE6BD02A59548100FA34F7 /* Alamofire */; };
@@ -71,8 +70,6 @@
 		F3D43BED2A5D9D2A007817B3 /* WatchListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D43BEC2A5D9D2A007817B3 /* WatchListViewController.storyboard */; };
 		F3D43BEF2A5D9D77007817B3 /* WatchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D43BEE2A5D9D77007817B3 /* WatchListCoordinator.swift */; };
 		F3D43BF12A5D9E0E007817B3 /* WatchListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D43BF02A5D9E0E007817B3 /* WatchListContainer.swift */; };
-		F3D43BF62A5DA44A007817B3 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D43BF42A5DA44A007817B3 /* MovieTableViewCell.swift */; };
-		F3D43BF72A5DA44A007817B3 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D43BF52A5DA44A007817B3 /* MovieTableViewCell.xib */; };
 		F3D9FA5629A0986600E904A2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5529A0986600E904A2 /* UIColor+Extension.swift */; };
 		F3D9FA5829A0987100E904A2 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5729A0987100E904A2 /* DefaultButton.swift */; };
 		F3D9FA5A29A0AC6400E904A2 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9FA5929A0AC6400E904A2 /* CheckBox.swift */; };
@@ -121,7 +118,6 @@
 		F319B3F9299A399300D5C7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F319B3FB299A399300D5C7EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F357660D29F69D1E00492119 /* WatchListViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewModelType.swift; sourceTree = "<group>"; };
-		F357660F29F69DC300492119 /* WatchListItemViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListItemViewModelType.swift; sourceTree = "<group>"; };
 		F357661129F69F9300492119 /* WatchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewModel.swift; sourceTree = "<group>"; };
 		F36435252A5B275200A91CE5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F36435312A5B363200A91CE5 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
@@ -133,9 +129,9 @@
 		F36435432A5BFFDE00A91CE5 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		F36435452A5C00C200A91CE5 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		F36435472A5C044000A91CE5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		F3697E6C2A1CBA2000398ABB /* WatchListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewCell.swift; sourceTree = "<group>"; };
+		F3697E6C2A1CBA2000398ABB /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		F3697E6E2A1CCA4F00398ABB /* WatchListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListItemViewModel.swift; sourceTree = "<group>"; };
-		F36EBA432A6FF13800E4B8AA /* WatchListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchListViewCell.xib; sourceTree = "<group>"; };
+		F36EBA432A6FF13800E4B8AA /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		F3C7937A29C6E6C3006EA8EE /* Top5MoviesViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top5MoviesViewModelType.swift; sourceTree = "<group>"; };
 		F3C7937C29C6E7B8006EA8EE /* Top5MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top5MoviesViewModel.swift; sourceTree = "<group>"; };
 		F3CE6BD72A595A0B00FA34F7 /* Movies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Movies.json; sourceTree = "<group>"; };
@@ -149,8 +145,6 @@
 		F3D43BEC2A5D9D2A007817B3 /* WatchListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WatchListViewController.storyboard; sourceTree = "<group>"; };
 		F3D43BEE2A5D9D77007817B3 /* WatchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListCoordinator.swift; sourceTree = "<group>"; };
 		F3D43BF02A5D9E0E007817B3 /* WatchListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListContainer.swift; sourceTree = "<group>"; };
-		F3D43BF42A5DA44A007817B3 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
-		F3D43BF52A5DA44A007817B3 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		F3D9FA5529A0986600E904A2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		F3D9FA5729A0987100E904A2 /* DefaultButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		F3D9FA5929A0AC6400E904A2 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
@@ -355,20 +349,10 @@
 		F357660A29F69A1300492119 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F357660B29F69A2400492119 /* Cells */,
 				F3E8D23F29E162B80012BEC4 /* WatchListViewController.swift */,
 				F3D43BEC2A5D9D2A007817B3 /* WatchListViewController.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		F357660B29F69A2400492119 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				F3697E6C2A1CBA2000398ABB /* WatchListViewCell.swift */,
-				F36EBA432A6FF13800E4B8AA /* WatchListViewCell.xib */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		F357660C29F69A3B00492119 /* ViewModel */ = {
@@ -377,7 +361,6 @@
 				F357660D29F69D1E00492119 /* WatchListViewModelType.swift */,
 				F357661129F69F9300492119 /* WatchListViewModel.swift */,
 				F3697E6E2A1CCA4F00398ABB /* WatchListItemViewModel.swift */,
-				F357660F29F69DC300492119 /* WatchListItemViewModelType.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -477,8 +460,8 @@
 		F3D43BF32A5DA416007817B3 /* MovieCell */ = {
 			isa = PBXGroup;
 			children = (
-				F3D43BF42A5DA44A007817B3 /* MovieTableViewCell.swift */,
-				F3D43BF52A5DA44A007817B3 /* MovieTableViewCell.xib */,
+				F3697E6C2A1CBA2000398ABB /* MovieTableViewCell.swift */,
+				F36EBA432A6FF13800E4B8AA /* MovieTableViewCell.xib */,
 			);
 			path = MovieCell;
 			sourceTree = "<group>";
@@ -654,8 +637,7 @@
 				F3E9E2EC2A5978D100E23450 /* Top5Movies.json in Resources */,
 				F3E9E2EA2A59784D00E23450 /* Movies.json in Resources */,
 				F319B3F5299A399200D5C7EB /* LoginViewController.storyboard in Resources */,
-				F36EBA442A6FF13800E4B8AA /* WatchListViewCell.xib in Resources */,
-				F3D43BF72A5DA44A007817B3 /* MovieTableViewCell.xib in Resources */,
+				F36EBA442A6FF13800E4B8AA /* MovieTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,7 +680,7 @@
 				F30110DB29A9C9F8004B22F1 /* MovieItemViewModelType.swift in Sources */,
 				F30110D729A8C150004B22F1 /* MovieDetailsViewModelType.swift in Sources */,
 				F3D43BF12A5D9E0E007817B3 /* WatchListContainer.swift in Sources */,
-				F3697E6D2A1CBA2000398ABB /* WatchListViewCell.swift in Sources */,
+				F3697E6D2A1CBA2000398ABB /* MovieTableViewCell.swift in Sources */,
 				F3D0A97F29CDA181000C6F7F /* SearchViewController.swift in Sources */,
 				F30110D029A8BEC9004B22F1 /* GenresViewModelType.swift in Sources */,
 				F30762C529B3179C00C10D2F /* NetworkManager.swift in Sources */,
@@ -717,8 +699,6 @@
 				F36435342A5B36F600A91CE5 /* MainTabBarViewController.swift in Sources */,
 				F30762C029B2441C00C10D2F /* RepositoryType.swift in Sources */,
 				F3D43BE62A5D926D007817B3 /* SearchCoordinator.swift in Sources */,
-				F357661029F69DC300492119 /* WatchListItemViewModelType.swift in Sources */,
-				F3D43BF62A5DA44A007817B3 /* MovieTableViewCell.swift in Sources */,
 				F30110BD29A77456004B22F1 /* GenreRealmModel.swift in Sources */,
 				F3D9FA5629A0986600E904A2 /* UIColor+Extension.swift in Sources */,
 				F36435412A5BFF0700A91CE5 /* BaseUIViewComponent.swift in Sources */,

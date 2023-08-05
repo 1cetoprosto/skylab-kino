@@ -7,16 +7,16 @@
 
 import Foundation
 
-class WatchListItemViewModel: WatchListItemViewModelType {
-    
-    private let item: DomainMovie
-    
-    init(item: DomainMovie) {
-        self.item = item
-    }
-    
-    var title: String {
-        return item.title
-    }
-    
-}
+//class WatchListItemViewModel: MovieItemViewModelType {
+//    
+//    private let item: DomainMovie
+//    
+//    init(item: DomainMovie) {
+//        self.item = item
+//    }
+//    
+//    var title: String { item.title }
+//    var posterPath: String { item.posterPath }
+//    var rank: Int { item.rank }
+//    
+//}
