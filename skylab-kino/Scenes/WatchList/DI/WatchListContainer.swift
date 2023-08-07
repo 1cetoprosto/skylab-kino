@@ -14,8 +14,8 @@ extension Container {
         
         let container = Container()
         
-        container.register(WatchListViewModelType.self) { _ in
-            WatchListViewModel()
+        container.register(MovieListViewModelType.self) { _ in
+            MovieListViewModel()
         }
         
         return container

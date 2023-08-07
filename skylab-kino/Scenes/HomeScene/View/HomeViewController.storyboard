@@ -26,24 +26,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar alpha="0.55000001192092896" contentMode="redraw" barStyle="black" placeholder="Search" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgq-vL-wu3">
-                                <rect key="frame" x="20" y="120" width="353" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="fjS-Oh-WoY"/>
-                                </constraints>
-                                <color key="barTintColor" red="0.14117647059999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                                <offsetWrapper key="searchTextPositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <scopeButtonTitles>
-                                    <string>Title</string>
-                                    <string>Title</string>
-                                </scopeButtonTitles>
-                                <connections>
-                                    <outlet property="delegate" destination="3q0-lD-IJ2" id="2fl-ac-S5D"/>
-                                </connections>
-                            </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tdj-E3-t0L">
-                                <rect key="frame" x="20" y="186" width="373" height="251"/>
+                                <rect key="frame" x="20" y="117" width="373" height="251"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="251" id="9UZ-HS-MaO"/>
@@ -93,14 +77,14 @@
                                 </cells>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="og4-Nu-HbF" customClass="CustomSegmentedControl" customModule="skylab_kino" customModuleProvider="target">
-                                <rect key="frame" x="24" y="461" width="345" height="30"/>
+                                <rect key="frame" x="24" y="392" width="345" height="30"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="w5i-KE-nLK"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wbn-xD-y0q">
-                                <rect key="frame" x="24" y="515" width="345" height="303"/>
+                                <rect key="frame" x="24" y="446" width="345" height="372"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kHN-Jm-e83">
                                     <size key="itemSize" width="100" height="144"/>
@@ -138,8 +122,6 @@
                         <viewLayoutGuide key="safeArea" id="ggO-dg-aXq"/>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="mgq-vL-wu3" secondAttribute="trailing" constant="20" id="4LM-FM-AWZ"/>
-                            <constraint firstItem="mgq-vL-wu3" firstAttribute="leading" secondItem="ggO-dg-aXq" secondAttribute="leading" constant="20" id="6Ud-JB-YUt"/>
                             <constraint firstItem="ggO-dg-aXq" firstAttribute="trailing" secondItem="Wbn-xD-y0q" secondAttribute="trailing" constant="24" id="9hb-rX-5rg"/>
                             <constraint firstItem="ggO-dg-aXq" firstAttribute="trailing" secondItem="tdj-E3-t0L" secondAttribute="trailing" id="CoV-L6-aYg"/>
                             <constraint firstItem="tdj-E3-t0L" firstAttribute="leading" secondItem="ggO-dg-aXq" secondAttribute="leading" constant="20" id="Ijc-Jc-dHd"/>
@@ -147,13 +129,12 @@
                             <constraint firstItem="og4-Nu-HbF" firstAttribute="top" secondItem="tdj-E3-t0L" secondAttribute="bottom" constant="24" id="NYh-YW-Ttq"/>
                             <constraint firstItem="Wbn-xD-y0q" firstAttribute="top" secondItem="og4-Nu-HbF" secondAttribute="bottom" constant="24" id="OTB-H2-cpu"/>
                             <constraint firstItem="og4-Nu-HbF" firstAttribute="leading" secondItem="ggO-dg-aXq" secondAttribute="leading" constant="24" id="Ses-Nu-BsR"/>
-                            <constraint firstItem="mgq-vL-wu3" firstAttribute="top" secondItem="HnA-I9-UzO" secondAttribute="bottom" constant="24" id="T3O-b1-Bt8"/>
+                            <constraint firstItem="tdj-E3-t0L" firstAttribute="top" secondItem="HnA-I9-UzO" secondAttribute="bottom" constant="21" id="c5m-H9-jEn"/>
                             <constraint firstItem="Wbn-xD-y0q" firstAttribute="bottom" secondItem="ggO-dg-aXq" secondAttribute="bottom" id="oQr-1k-xYF"/>
                             <constraint firstItem="HnA-I9-UzO" firstAttribute="leading" secondItem="ggO-dg-aXq" secondAttribute="leading" constant="24" id="oYm-m8-UEH"/>
                             <constraint firstAttribute="trailing" secondItem="HnA-I9-UzO" secondAttribute="trailing" constant="24" id="rYA-w1-CFH"/>
                             <constraint firstItem="Wbn-xD-y0q" firstAttribute="leading" secondItem="ggO-dg-aXq" secondAttribute="leading" constant="24" id="vo5-im-8xN"/>
                             <constraint firstItem="HnA-I9-UzO" firstAttribute="top" secondItem="ggO-dg-aXq" secondAttribute="top" constant="10" id="xfQ-YR-535"/>
-                            <constraint firstItem="tdj-E3-t0L" firstAttribute="top" secondItem="mgq-vL-wu3" secondAttribute="bottom" constant="24" id="yf4-x9-vt6"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Home" id="F3B-HE-q9o">
@@ -162,7 +143,6 @@
                     <connections>
                         <outlet property="movieCollectionView" destination="Wbn-xD-y0q" id="aya-mY-UcA"/>
                         <outlet property="requestSegmented" destination="og4-Nu-HbF" id="z5h-b7-oH7"/>
-                        <outlet property="searchBar" destination="mgq-vL-wu3" id="QCP-z8-LQS"/>
                         <outlet property="top5CollectionView" destination="tdj-E3-t0L" id="HKh-je-rYv"/>
                     </connections>
                 </viewController>

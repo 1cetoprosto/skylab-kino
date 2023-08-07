@@ -16,7 +16,7 @@ class WatchListViewController: BaseViewController, Storyboarded {
     @IBOutlet weak var findYourMovieLabel: UILabel!
     
     // MARK: - let/var
-    var viewModel: WatchListViewModelType?
+    var viewModel: MovieListViewModelType?
     
     // MARK: - lifecycle func
     override func viewWillAppear(_ animated: Bool) {

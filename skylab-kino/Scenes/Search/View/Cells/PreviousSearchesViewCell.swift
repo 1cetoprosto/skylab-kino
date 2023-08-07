@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchHistoryViewCell: UITableViewCell {
+class PreviousSearchesViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
 
     weak var viewModel: SearchHistoryItemViewModelType? {

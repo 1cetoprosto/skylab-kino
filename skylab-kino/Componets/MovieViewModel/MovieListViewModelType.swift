@@ -7,10 +7,11 @@
 
 import Foundation
 
-protocol WatchListViewModelType {
+protocol MovieListViewModelType {
     var isEmpty: Bool { get }
     
     func getWatchList()
+    func getSearchResultList(query: String)
     func removeItem(at indexPath: IndexPath)
     func numberOfRowInSection(for section: Int) -> Int
     func cellViewModel(for indexPath: IndexPath) -> MovieItemViewModelType?

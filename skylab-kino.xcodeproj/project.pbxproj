@@ -36,8 +36,8 @@
 		F319B3F5299A399200D5C7EB /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F3299A399200D5C7EB /* LoginViewController.storyboard */; };
 		F319B3F7299A399300D5C7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F6299A399300D5C7EB /* Assets.xcassets */; };
 		F319B3FA299A399300D5C7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F319B3F8299A399300D5C7EB /* LaunchScreen.storyboard */; };
-		F357660E29F69D1E00492119 /* WatchListViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357660D29F69D1E00492119 /* WatchListViewModelType.swift */; };
-		F357661229F69F9300492119 /* WatchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357661129F69F9300492119 /* WatchListViewModel.swift */; };
+		F357660E29F69D1E00492119 /* MovieListViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357660D29F69D1E00492119 /* MovieListViewModelType.swift */; };
+		F357661229F69F9300492119 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357661129F69F9300492119 /* MovieListViewModel.swift */; };
 		F36435262A5B275200A91CE5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36435252A5B275200A91CE5 /* Coordinator.swift */; };
 		F364352B2A5B2FC500A91CE5 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F364352A2A5B2FC500A91CE5 /* RxCocoa */; };
 		F364352D2A5B2FC500A91CE5 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F364352C2A5B2FC500A91CE5 /* RxRelay */; };
@@ -77,7 +77,7 @@
 		F3E8D23729E149DA0012BEC4 /* SearchHistoryItemViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23629E149DA0012BEC4 /* SearchHistoryItemViewModelType.swift */; };
 		F3E8D23929E14BA00012BEC4 /* SearchHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23829E14BA00012BEC4 /* SearchHistoryViewModel.swift */; };
 		F3E8D23B29E14E250012BEC4 /* SearchHistoryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23A29E14E250012BEC4 /* SearchHistoryItemViewModel.swift */; };
-		F3E8D23E29E158910012BEC4 /* SearchHistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23D29E158910012BEC4 /* SearchHistoryViewCell.swift */; };
+		F3E8D23E29E158910012BEC4 /* PreviousSearchesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23D29E158910012BEC4 /* PreviousSearchesViewCell.swift */; };
 		F3E8D24029E162B80012BEC4 /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E8D23F29E162B80012BEC4 /* WatchListViewController.swift */; };
 		F3E9E2EA2A59784D00E23450 /* Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = F3CE6BD72A595A0B00FA34F7 /* Movies.json */; };
 		F3E9E2EC2A5978D100E23450 /* Top5Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = F3E9E2EB2A5978D100E23450 /* Top5Movies.json */; };
@@ -117,8 +117,8 @@
 		F319B3F6299A399300D5C7EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F319B3F9299A399300D5C7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F319B3FB299A399300D5C7EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F357660D29F69D1E00492119 /* WatchListViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewModelType.swift; sourceTree = "<group>"; };
-		F357661129F69F9300492119 /* WatchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewModel.swift; sourceTree = "<group>"; };
+		F357660D29F69D1E00492119 /* MovieListViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModelType.swift; sourceTree = "<group>"; };
+		F357661129F69F9300492119 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		F36435252A5B275200A91CE5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F36435312A5B363200A91CE5 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
 		F36435332A5B36F600A91CE5 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		F3E8D23629E149DA0012BEC4 /* SearchHistoryItemViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryItemViewModelType.swift; sourceTree = "<group>"; };
 		F3E8D23829E14BA00012BEC4 /* SearchHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryViewModel.swift; sourceTree = "<group>"; };
 		F3E8D23A29E14E250012BEC4 /* SearchHistoryItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryItemViewModel.swift; sourceTree = "<group>"; };
-		F3E8D23D29E158910012BEC4 /* SearchHistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryViewCell.swift; sourceTree = "<group>"; };
+		F3E8D23D29E158910012BEC4 /* PreviousSearchesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousSearchesViewCell.swift; sourceTree = "<group>"; };
 		F3E8D23F29E162B80012BEC4 /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 		F3E9E2EB2A5978D100E23450 /* Top5Movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Top5Movies.json; sourceTree = "<group>"; };
 		F3FC16592A6911EA0074B57F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
@@ -214,7 +214,6 @@
 			children = (
 				F3D43BEE2A5D9D77007817B3 /* WatchListCoordinator.swift */,
 				F3D43BF22A5D9E70007817B3 /* DI */,
-				F357660C29F69A3B00492119 /* ViewModel */,
 				F357660A29F69A1300492119 /* View */,
 			);
 			path = WatchList;
@@ -355,14 +354,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F357660C29F69A3B00492119 /* ViewModel */ = {
+		F357660C29F69A3B00492119 /* MovieViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F357660D29F69D1E00492119 /* WatchListViewModelType.swift */,
-				F357661129F69F9300492119 /* WatchListViewModel.swift */,
+				F357660D29F69D1E00492119 /* MovieListViewModelType.swift */,
+				F357661129F69F9300492119 /* MovieListViewModel.swift */,
 				F3697E6E2A1CCA4F00398ABB /* WatchListItemViewModel.swift */,
 			);
-			path = ViewModel;
+			path = MovieViewModel;
 			sourceTree = "<group>";
 		};
 		F36435302A5B361100A91CE5 /* MainTabBar */ = {
@@ -532,6 +531,7 @@
 				F3D9FA5729A0987100E904A2 /* DefaultButton.swift */,
 				F3D9FA5929A0AC6400E904A2 /* CheckBox.swift */,
 				F30AF06729CABFA7000F65EE /* CustomSegmentedControl.swift */,
+				F357660C29F69A3B00492119 /* MovieViewModel */,
 				F3D43BF32A5DA416007817B3 /* MovieCell */,
 			);
 			path = Componets;
@@ -540,7 +540,7 @@
 		F3E8D23C29E1585E0012BEC4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				F3E8D23D29E158910012BEC4 /* SearchHistoryViewCell.swift */,
+				F3E8D23D29E158910012BEC4 /* PreviousSearchesViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -657,9 +657,9 @@
 				F3D0A97729CD5B1A000C6F7F /* MoviesViewModel.swift in Sources */,
 				F3D43BE82A5D9361007817B3 /* SearchContainer.swift in Sources */,
 				F36435362A5B382000A91CE5 /* HomeCoordinator.swift in Sources */,
-				F357661229F69F9300492119 /* WatchListViewModel.swift in Sources */,
+				F357661229F69F9300492119 /* MovieListViewModel.swift in Sources */,
 				F3FC165D2A6912800074B57F /* Montserrat.swift in Sources */,
-				F357660E29F69D1E00492119 /* WatchListViewModelType.swift in Sources */,
+				F357660E29F69D1E00492119 /* MovieListViewModelType.swift in Sources */,
 				F30110A929A75CA2004B22F1 /* TMDBMoviesModel.swift in Sources */,
 				F364353F2A5BFDCA00A91CE5 /* BaseViewController.swift in Sources */,
 				F3E8D23529E144840012BEC4 /* SearchHistoryViewModelType.swift in Sources */,
@@ -690,7 +690,7 @@
 				F3D43BEF2A5D9D77007817B3 /* WatchListCoordinator.swift in Sources */,
 				F30110B329A77365004B22F1 /* RealmManager.swift in Sources */,
 				F3E8D23929E14BA00012BEC4 /* SearchHistoryViewModel.swift in Sources */,
-				F3E8D23E29E158910012BEC4 /* SearchHistoryViewCell.swift in Sources */,
+				F3E8D23E29E158910012BEC4 /* PreviousSearchesViewCell.swift in Sources */,
 				F30762B929AA4D6500C10D2F /* Top5MovieCollectionViewCell.swift in Sources */,
 				F3D9FA5829A0987100E904A2 /* DefaultButton.swift in Sources */,
 				F30110D929A8C15A004B22F1 /* MovieDetailsViewModel.swift in Sources */,

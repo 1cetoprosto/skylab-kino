@@ -9,25 +9,50 @@ import Foundation
 
 class SearchHistoryViewModel: SearchHistoryViewModelType {
     
-    private var selectedIndexPath: IndexPath?
-    
     private var movies: [String]?
     
-    func getSearchHistory(completion: @escaping () -> Void) {
-        movies = []
-        movies?.append("Avatar")
-        movies?.append("Avatar 2")
-        movies?.append("Avengers")
-        movies?.append("Huesera: The Bone Woman")
-        movies?.append("Rye Lane")
-        movies?.append("Joyland")
-        movies?.append("Full Time")
-        movies?.append("Return to Seoul")
-        movies?.append("A Thousand and One")
-        movies?.append("Attachment")
-        movies?.append("John Wick: Chapter 4")
+    var isEmpty: Bool {
+        guard let movies else { return true }
+        return movies.isEmpty
+    }
+    
+    private var selectedIndexPath: IndexPath?
+    
+    func addSearchHistory(query: String) {
+        // Додавання запиту в список попередніх пошукових запитів та обмеження їхньої кількості до 10.
+        guard var movies else { return }
         
-        completion()
+        if movies.contains(query) {
+            movies.removeAll { $0 == query }
+        }
+        movies.insert(query, at: 0)
+        if movies.count > 10 {
+            movies.removeLast()
+        }
+    }
+    
+    func getSearchHistory() {
+        movies = ["Avatar",
+                  "Avatar 2",
+                  "Avengers",
+                  "Huesera: The Bone Woman",
+                  "Rye Lane",
+                  "Joyland",
+                  "Full Time",
+                  "Return to Seoul",
+                  "A Thousand and One",
+                  "Attachment",
+                  "John Wick: Chapter 4",
+                  "Titanik"]
+    }
+    
+    func filter(searchText: String) {
+        guard let movies else { return }
+        self.movies = movies.filter { $0.localizedCaseInsensitiveContains(searchText) }
+    }
+    
+    func removeAll() {
+        self.movies = []
     }
     
     func numberOfRowInSection(for section: Int) -> Int {

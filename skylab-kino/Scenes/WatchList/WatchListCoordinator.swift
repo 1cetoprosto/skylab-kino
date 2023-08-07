@@ -24,7 +24,7 @@ class WatchListCoordinator: Coordinator {
     private func openWatchListController() {
         
           let viewController = WatchListViewController.instantiate(coordinator: self)
-        viewController.viewModel = Container.watchListViewModel.resolve(WatchListViewModelType.self)
+        viewController.viewModel = Container.watchListViewModel.resolve(MovieListViewModelType.self)
 
 //        viewController.top5MoviesViewModel?.openQuizQuestionsController
 //            .asObserver()

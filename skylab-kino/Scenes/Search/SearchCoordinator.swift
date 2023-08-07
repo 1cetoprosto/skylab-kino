@@ -24,7 +24,8 @@ class SearchCoordinator: Coordinator {
     private func openSearchController() {
         
           let viewController = SearchViewController.instantiate(coordinator: self)
-        viewController.searchHistoryViewModel = Container.searchHistoryViewModel.resolve(SearchHistoryViewModelType.self)
+        viewController.previousSearchesViewModel = Container.searchHistoryViewModel.resolve(SearchHistoryViewModelType.self)
+        viewController.searchResultViewModel = Container.movieListViewModel.resolve(MovieListViewModelType.self)
 
 //        viewController.top5MoviesViewModel?.openQuizQuestionsController
 //            .asObserver()
